@@ -60,6 +60,9 @@ x-2\div 3\times 4=y + x\cdot y
 
 除了基本运算符号，还有更多符号在下面的列表里，由于内容太多就不一一介绍了，具体按照自己需求查看下表内容
 
+
+$$$$
+
 - **常用数学符号**
     
    | Property | LaTeX  | 符号  | LaTeX | 符号   | LaTeX|
@@ -85,8 +88,8 @@ x-2\div 3\times 4=y + x\cdot y
     | ∀ | \forall | ℏ | \hbar | σ | \sigma |
     | ∃ | \exists | δ | \delta | Φ | \Phi |
     |  |  | ω | \omega | ∇ | \nabla |
-- ****希腊字母 Greek alphabet****
-    
+
+- **希腊字母**
     
     | 小写 | LaTeX | 读音 | 大写 | LaTeX  | 读音  |
     | --- | --- | --- | --- | --- | --- |
@@ -95,7 +98,7 @@ x-2\div 3\times 4=y + x\cdot y
     | γ | \gamma | /ˈɡæmə/ | Θ | \Theta | /ˈθiːtə/ |
     | δ | \delta | /ˈdɛltə/ | Λ | \Lambda | /ˈlæmdə/ |
     | ϵ | \epsilon | /ˈɛpsɪlɒn/ | Ξ | \Xi | /zaɪ, ksaɪ/ |
-    | ε | \varepsilon | /ˈɛpsɪlɒn/ | Π | \Pi | /paɪ/ |
+    | ε | \epsilon | /ˈɛpsɪlɒn/ | Π | \Pi | /paɪ/ |
     | ζ | \zeta | /ˈzeɪtə/ | Σ | \Sigma | /ˈsɪɡmə/ |
     | η | \eta | /ˈeɪtə/ | Υ | \Upsilon | /ˈʌpsɪlɒn/ |
     | θ | \theta | /ˈθiːtə/ | Φ | \Phi | /faɪ/ |
@@ -106,7 +109,7 @@ x-2\div 3\times 4=y + x\cdot y
     | μ | \mu | /mjuː/ | χ | \chi | /kaɪ/ |
     | ν | \nu | /njuː/ | φ | \varphi | /faɪ/ |
     | ξ | \xi | /zaɪ, ksaɪ/ | ϕ | \phi | /faɪ/ |
-    | o | o | /ˈɒmɪkrɒn/ | υ | \upsilon | /ˈʌpsɪlɒn/ |
+    | ο | \omicron | /ˈɒmɪkrɒn/ | υ | \upsilon | /ˈʌpsɪlɒn/ |
     | π | \pi | /paɪ/ | τ | \tau | /taʊ, tɔː/ |
     | ϖ | \varpi | /paɪ/ | ς | \varsigma | /ˈsɪɡmə/ |
     | ρ | \rho | /roʊ/ | σ | \sigma | /ˈsɪɡmə/ |
@@ -114,8 +117,7 @@ x-2\div 3\times 4=y + x\cdot y
 
     **注意:** MathJax支持的大写希腊字母有限，如需其他（如大写Alpha），可使用**罗马体**转换，如`\mathrm{A}`表示大写Alpha：A。
     
-    - ****集合 Sets****
-    
+- **集合**
     
     | 图标 | LaTeX | 图标 1 | LaTeX 1 |
     | --- | --- | --- | --- |
@@ -142,8 +144,7 @@ x-2\div 3\times 4=y + x\cdot y
     | ⊂ | \subset | ⫌ | \supsetneqq |
     | ⋐ | \Subset | ⫌ | \varsupsetneqq |
     
-- ****希伯来字母 Hebrew alphabet****
-    
+- **希伯来字母**
     
     | 图标 | LaTeX | 英文 |
     | --- | --- | --- |
@@ -152,8 +153,7 @@ x-2\div 3\times 4=y + x\cdot y
     | ℷ | \gimel | gimel |
     | ℸ | \daleth | daleth |
 
-- ****几何符号 Geometric symbols****
-    
+- **几何符号**
     
     | 图标 | LaTeX | 图标  | LaTeX  |
     | --- | --- | --- | --- |
@@ -170,8 +170,8 @@ x-2\div 3\times 4=y + x\cdot y
     | ◼ | \blacksquare | ▾ | \blacktriangledown |
     | ⋄ | \diamond | ◂ | \blacktriangleleft |
     | ◊ | \Diamond \lozenge | ▸ | \blacktriangleright |
-- ****逻辑符号 Logic symbols****
-    
+
+- **逻辑符号**
     
     | 图标 | LaTeX | 图标  | LaTeX  |
     | --- | --- | --- | --- |
@@ -191,13 +191,13 @@ $$
 a_{ij}^{2} + b^3_{2}=x^{t} + y' + x''_{12}
 $$
 
-_{}表示下标，{}括号里写下标内容、^{}表示上标，{}括号里写上标内容，但上下标内容只有一个字符时，可以不用大括号括起来；单引号’表示求导。
+`_{}`表示下标，`{}`括号里写下标内容、`^{}`表示上标，`{}`括号里写上标内容，但上下标内容只有一个字符时，可以不用大括号括起来；单引号’表示求导。
 
 ```latex
-a_{ij}^{2} + b^3_{2}=x^{t} + y'tex
+a_{ij}^{2} + b^3_{2}=x^{t} + y' + x''_{12}
 ```
 
-如果想在$x$前面显示上下标，如下，可以把$x$放在_{}和^{}后面
+如果想在$x$前面显示上下标，如下，可以把$x$放在`_{}`和`^{}`后面
 
 $$
 _{a}^{b}x
@@ -207,7 +207,7 @@ $$
 _{a}^{b}x
 ```
 
-如何把上下标放在正上下方呢? 可以用\limits_{}^{},前一个括号里是下标，后一个括号里是上标，\limits这个符号是用来表示数学里的范围，不是所有的符号在运算中需要范围，所以这种方式只对一些有可能需要定义范围的特定的符号有效(例如，\int，\prod，\bigcap，\bigcup，\sum，\oint，\lim，\coprod)
+如何把上下标放在正上下方呢? 可以用`\limits_{}^{}`,前一个括号里是下标，后一个括号里是上标，`\limits`这个符号是用来表示数学里的范围，不是所有的符号在运算中需要范围，所以这种方式只对一些有可能需要定义范围的特定的符号有效(例如，`\int`，`\prod`，`\bigcap`，`\bigcup`，`\sum`，`\oint`，`\lim`，`\coprod`)
 
 $$
 \int\limits_{a}^{b} 
@@ -236,9 +236,9 @@ $$
 \sqrt{x} + \sqrt{x^{2}+\sqrt{y}} = \sqrt[3]{k_{i}} - \frac{x}{m}
 ```
 
-\sqrt{}表示平方根，括号里写根号下的内容
+`\sqrt{}`表示平方根，括号里写根号下的内容
 
-\sqrt[n]{}表示n次方根，[]里填写数字是几就为代表根式是几次方根例如\sqrt[3]{x}就表示$\sqrt[3]{x}$
+`\sqrt[n]{}`表示n次方根，[]里填写数字是几就为代表根式是几次方根例如\sqrt[3]{x}就表示$\sqrt[3]{x}$
 
 \frac{}{}表示分式,前一个括号里是分子，后一个括号里是分母。也可以使用\cfrac{}{}，区别在于比前者字号稍大
 
@@ -248,7 +248,7 @@ $$
 \vec{a} + \overrightarrow{AB} + \overleftarrow{DE}
 $$
 
-\vec表示向量，\overrightarrow表示箭头向右的向量，\overleftarrow表示箭头向左的向
+`\vec`表示向量，`\overrightarrow`表示箭头向右的向量，`\overleftarrow`表示箭头向左的向
 
 ```latex
 \vec{a} + \overrightarrow{AB} + \overleftarrow{DE}
@@ -260,15 +260,48 @@ $$
 \lim_{x \to \infty} x^2_{22} - \int_{1}^{5}x\mathrm{d}x + \sum_{n=1}^{20} n^{2} = \prod_{j=1}^{3} y_{j}  + \lim_{x \to -2} \frac{x-2}{x}
 $$
 
- \int表示积分，\lim表示极限， \sum表示求和，\prod表示乘积
+`\int`表示积分，`\lim`表示极限， `\sum`表示求和，`\prod`表示乘积
 
-\lim_{x \to 0}表示$\lim_{x \to 0}$ \to代表$\to$ 如果把0改为\infty那么就会变成$\lim_{x \to \infty}$
+`\lim_{x \to 0}`表示$\lim_{x \to 0}$ `\to`代表$\to$ 如果把0改为`\infty`那么就会变成$\lim_{x \to \infty}$
 
 ```latex
 \lim_{x \to \infty} x^2_{22} - \int_{1}^{5}x\mathrm{d}x + \sum_{n=1}^{20} n^{2} = \prod_{j=1}^{3} y_{j}  + \lim_{x \to -2} \frac{x-2}{x}
 ```
+## 7.空格与换行
 
-## **7.矩阵**
+### 空格
+|名称|代码|演示|描述|
+|---|---|---|---|
+|两个quad空格|`a\qquad b`|$a\qquad b$|两个m的宽度|
+|quad空格	|`a\quad b`	|$a\quad b$	|一个m的宽度|
+|大空格|`a\ b`|$a\ b$|1/3m宽度|
+|中等空格|	`a\;b`	|$a\;b$	|2/7m宽度|
+|小空格	|`a\,b`	|$a\,b$	|1/6m宽度|
+|紧贴	|`a\!b`	|$a\!b$|缩进1/6m宽度|
+
+### 换行
+
+LaTeX是默认不换行的，如果换行必须在特殊条件下用`\\`表示换行
+
+$$
+\begin{equation}
+\begin{aligned}
+abc\\ def\\
+\end{aligned}
+\end{equation}
+$$ 
+
+
+```latex
+\begin{equation}
+\begin{aligned}
+abc\\ 
+def\\
+\end{aligned}
+\end{equation}
+```
+
+## 8.矩阵
 
 $$
 \begin{pmatrix}    a_{11} & \cdots & a_{1n} \\    \vdots & \ddots & \vdots \\    a_{m1} & \cdots & a_{mn}  \end{pmatrix} 
@@ -300,12 +333,9 @@ $$
 \end{pmatrix}
 $$
 
-然后我们输入第一行矩阵，显示如右。注意，这里的&起到空格的作用，只在矩阵可行，一般情况**\+空格**可实现空格效果，在LaTeX中如果只输入空格是不会有空格的效果的，当然这个方法并不标准，是我自己摸索出来的，标准的空格如下，但比较麻烦。
+然后我们输入第一行矩阵，显示如右。注意，这里的`&`起到空格的作用，只在矩阵可行。在LaTeX中如果只输入空格是不会有空格的效果的，当然这个方法并不标准，是我自己摸索出来的，标准的空格如下，但比较麻烦。
 
 - 标准的空格
-    
-
-    
 
 ```latex
 \begin{pmatrix}  
@@ -335,35 +365,158 @@ $$
 \end{pmatrix}
 $$
 
-最后一行矩阵同上方法，即可得到开头那个整的矩阵。**再此提醒要用\\换行！！！**
+最后一行矩阵同上方法，即可得到开头那个整的矩阵。**再次提醒要用`\\`换行！！！**
 
-那么其他形式的矩阵怎么办呢？如下图，把括号里的蓝色字体改成表格里其他形式的就行
+**示例：**
 
+$$
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+$$
+
+```latex
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+```
+---
+
+$$
 \begin{pmatrix} 
+a & b \\
+c & d
+\end{pmatrix}
+$$
 
- \end{pmatrix}
+```latex
+\begin{pmatrix} 
+a & b \\
+c & d
+\end{pmatrix}
+```
+---
+
+$$
+\begin{bmatrix} 
+a & b \\
+c & d
+\end{bmatrix}
+$$
+
+```latex
+\begin{bmatrix} 
+a & b \\
+c & d
+\end{bmatrix}
+```
+---
+
+$$
+\begin{Bmatrix} 
+a & b \\
+c & d
+\end{Bmatrix}
+$$
+
+```latex
+\begin{Bmatrix} 
+a & b \\
+c & d
+\end{Bmatrix}
+```
+---
+
+$$
+\begin{vmatrix} 
+a & b \\
+c & d
+\end{vmatrix}
+$$
+
+```latex
+\begin{vmatrix} 
+a & b \\
+c & d
+\end{vmatrix}
+```
+---
+
+$$
+\begin{Vmatrix} 
+a & b \\
+c & d
+\end{Vmatrix}
+$$
+
+```latex
+\begin{Vmatrix} 
+a & b \\
+c & d
+\end{Vmatrix}
+```
+
+**使用\left \right关键词**
+
+$$
+\left(
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+\right)
+$$
+
+```latex
+\left(
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+\right)
+```
+---
+
+$$
+\left[
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+\right]
+$$
 
 
+```latex
+\left[
+\begin{matrix} 
+a & b \\
+c & d
+\end{matrix}
+\right]
+```
 
-## 8.公式**编号**
+## 9.公式编号
 
 $$
 f(x) = \log_{a}{b}-c\tag{1.1}
 $$
 
-代码如下，其实只需要在你的公式后添加\tag{}，括号里填写编号。
+代码如下，其实只需要在你的公式后添加`\tag{}`，括号里填写编号。
 
 ```latex
 f(x) = \log_{a}{b}-c \tag{1.1}
 ```
 
-## 9.公式拆分/三角函数
+## 10.多行公式/三角函数
 
 $$
 \begin{split}\cos 2x &= \cos^2x - \sin^2x \\&=2\cos^2x-1\end{split}
 $$
 
-\sin是正弦  \cos是余弦  \tan是正切，你可能会好奇这些符号其实是可以用键盘直接打出来的，那么为什么还要设立一个单独的符号呢？那就让我们一探究竟吧，如果我们用键盘写出sin，那么在LaTeX下显示是$sin$但如果我们用符号\sin那么在LaTeX下显示是$\sin$ 你会发现它们在字体上是有不同的，而且\sin只表示一个符号但sin表示三个符号，这在LaTeX排布时会略显差异。
+`\sin`是正弦  `\cos`是余弦  `\tan`是正切，你可能会好奇这些符号其实是可以用键盘直接打出来的，那么为什么还要设立一个单独的符号呢？那就让我们一探究竟吧，如果我们用键盘写出sin，那么在LaTeX下显示是$sin$但如果我们用符号`\sin`那么在LaTeX下显示是$\sin$ 你会发现它们在字体上是有不同的，而且`\sin`只表示一个符号但sin表示三个符号，这在LaTeX排布时会略显差异。
 
 ```latex
 \begin{split}
@@ -377,7 +530,7 @@ $$
 
 (这是&的第二个用法)
 
-## 10.方程组
+## 11.方程组
 
 $$
 f(x) = \begin{cases}
@@ -411,7 +564,7 @@ f(x) = \begin{cases}
 \end{cases}
 $$
 
-\begin{cases} \end{cases} 其实就是一个花括号的格式，只需要在里面填写方程和条件然后用\\换行把每个方程分开即可，这样就可以得到那个方程组。让我们来看下一步
+`\begin{cases} \end{cases}` 其实就是一个花括号的格式，只需要在里面填写方程和条件然后用\\换行把每个方程分开即可，这样就可以得到那个方程组。让我们来看下一步
 
 ```latex
 f(x) = \begin{cases}
@@ -451,7 +604,7 @@ $$
 
 好的，现在你已经可以通过LaTeX写出绝大多数数学公式了，它一定会成为你数理学习路上的好帮手
 
-## **11.狄拉克符号**
+## 12.狄拉克符号
 
 $$
 \left \langle \psi \right | 
@@ -459,23 +612,31 @@ $$
 \left \langle \psi  | \psi  \right \rangle
 $$
 
+**方法一**
+
 ```latex
 \left \langle \psi \right | 
 \left| \psi  \right \rangle 
 \left \langle \psi | \psi \right \rangle
 ```
 
-\left \langle $\psi$ \right | 表示$\left \langle \psi \right |$
+`\left \langle $\psi$ \right |` 表示$\left \langle \psi \right |$
 
-\left |  $\psi$  \right\rangle 表示 $\left| \psi  \right \rangle$ 
+`\left | $\psi$ \right \rangle` 表示 $\left| \psi  \right \rangle$ 
 
-\left \langle $\psi$  |  $\psi$ \right \rang$\left \langle \psi | \psi \right \rangle$
+`\left \langle $\psi$  |  $\psi$ \right \rang`表示$\left \langle \psi | \psi \right \rangle$
 
-这看起来也许有些复杂，如下，我把它们性质整理了一下
+这种方式会看起来比较复杂
 
-根据我的观察，我总结了一些经验，\left 表示在内容左边 \right表示在内容右边，这两个必须存在 ，中两个中间就是填写内容的地方，\left和\right后面必须跟着其他符号，不能为空。\langle和 \rangle分别代表$\left \langle \right \rangle$，符号|可以通过Shift+\ 打出来
+**方法二**
+```latex
+\bra{\psi} 
+\ket{\psi} 
+\braket{\phi|\psi}
+```
+这是标准的写法，使用起来也非常简单，推荐使用这样的写法
 
-## 12.字体
+## 13.字体
 
 例如我们数学中的傅里叶变换$\mathcal{F}$和拉普拉斯变换$\mathcal{L}$,你知道这些符号都是怎么打出来的吗？
 
@@ -537,7 +698,7 @@ $$
 {\color{Blue}abc}
 $$
 
-## **13.大小**
+## **14.大小**
 
 LaTeX不仅可以定义字体，颜色，还可以定义字的大小。虽然这在数学公式中并不一定能用上，但我还是提一嘴，以备不时之需
 
@@ -565,7 +726,7 @@ LaTeX不仅可以定义字体，颜色，还可以定义字的大小。虽然这
 \begin{array}{l} 
   {\displaystyle \int f^{-1}(x-x_a)dx} \\
   {\textstyle \int f^{-1}(x-x_a)dx} \\
-  {\scriptstyle \int f^{-1}(x-x_a)dx\\
+  {\scriptstyle \int f^{-1}(x-x_a)dx}\\
   {\scriptscriptstyle \int f^{-1}(x-x_a)dx}
 \end{array}
 ```
@@ -579,9 +740,9 @@ $$
 \end{array}
 $$
 
-## 14.化学方程式
+## 15.化学方程式
 
-以上内容足够你打出你所能在书本上见到的所有数学公式，既然如此，我们不如挑战一下更具挑战的化学方程式，让我们试试看吧！
+以上内容足够你打出你所能在书本上见到的绝大多数**数学公式**，既然如此，我们不如再尝试一下**化学方程式**，让我们试试看吧！
 
 $$
 SO_4^{2-}+Ba^{2+}\to BaSO_4\downarrow
@@ -603,7 +764,7 @@ $$
 
 下面这个用扩展方法打出来的化学方程式中沉淀箭头由v代替，字母后的数字自动变为下标，多个上标符号在一块时不需要用{}括起来箭头被->代替,\ce表示启用化学的扩展方法
 
-## 15.参考与赏析
+## 16.参考与赏析
 
 好的，教程到这里就结束了。下面时一些比较复杂的方程，值得慢慢研究，你一定能从中有更多收获。
 

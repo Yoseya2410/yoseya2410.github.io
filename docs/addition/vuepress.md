@@ -230,13 +230,13 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 我猜测可能是代码中的**链接无法访问**的缘故，通过[站长工具](https://tool.chinaz.com/speedtest/storage.googleapis.com) 找一个可以访问的**解析IP**，把这个**IP**写入**hosts文件**,格式如下
 
 ```
-172.217.160.80             storage.googleapis.com
+142.251.42.240              storage.googleapis.com
 ```
 
-回到浏览器打开**开发者工具**，查看**Service Workers**的状态和`service-worker.js`是否正常，如果还是不能访问也有可能网络运营商对DNS进行了操作。例如，DNS劫持或DNS污染，可以尝试使用代理的方式解决
+回到浏览器打开**开发者工具**，查看**Service Workers**的状态和`service-worker.js`是否正常，如果还是不能访问，也有可能是DNS出现了问题。例如，DNS劫持或DNS污染，可以尝试使用代理或VPN的方式解决
 
 在浏览器中想要删除网页PWA的缓存时，不要使用清除浏览器缓存的方式，这大概率是并不会成功，可以通过注销该网页的**Service Workers**来清除
 
 操作：打开浏览器**开发者工具** → **应用程序** → **Service Workers** → 注销
 
-**如果不需要PWA时**可以使用浏览器**隐私模式访问网**页，隐私模式**不会保存缓存**，下次打开网页时还是通过直接访问的方式访问网站，而不是访问离线缓存的内容
+**如果不需要PWA时**，可以使用浏览器的**隐私模式**访问网页，隐私模式**不会保存缓存**，下次打开网站时还是通过直接访问的方式打开网页，而不是访问离线缓存的内容
