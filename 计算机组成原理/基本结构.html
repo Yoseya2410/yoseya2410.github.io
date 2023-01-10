@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>计算机基本结构 | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/notes.png">
+    <meta name="description" content="这里汇集了我在自然科学,计算机,信息技术,电子技术等领域学到的知识">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="keywords" content="数学,物理,计算机,电子,互联网,信息,知识,笔记,釉色鸭,yoseya,博客,blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc3511f1.css" as="style"><link rel="preload" href="/assets/js/app.3a179c08.js" as="script"><link rel="preload" href="/assets/js/2.9ce38e7a.js" as="script"><link rel="preload" href="/assets/js/51.e6427b49.js" as="script"><link rel="preload" href="/assets/js/3.a3de281d.js" as="script"><link rel="prefetch" href="/assets/js/10.29cfd664.js"><link rel="prefetch" href="/assets/js/11.6af3e845.js"><link rel="prefetch" href="/assets/js/12.fc606c1f.js"><link rel="prefetch" href="/assets/js/13.da6f7b9d.js"><link rel="prefetch" href="/assets/js/14.51f6614a.js"><link rel="prefetch" href="/assets/js/15.cebed5bc.js"><link rel="prefetch" href="/assets/js/16.1698229b.js"><link rel="prefetch" href="/assets/js/17.6850c45b.js"><link rel="prefetch" href="/assets/js/18.e7de597b.js"><link rel="prefetch" href="/assets/js/19.de8b97d5.js"><link rel="prefetch" href="/assets/js/20.4f31f3de.js"><link rel="prefetch" href="/assets/js/21.05908e5b.js"><link rel="prefetch" href="/assets/js/22.d6e87ed0.js"><link rel="prefetch" href="/assets/js/23.d45da811.js"><link rel="prefetch" href="/assets/js/24.17f7c0e2.js"><link rel="prefetch" href="/assets/js/25.145ff0ad.js"><link rel="prefetch" href="/assets/js/26.48f0e90d.js"><link rel="prefetch" href="/assets/js/27.0f997655.js"><link rel="prefetch" href="/assets/js/28.5995860d.js"><link rel="prefetch" href="/assets/js/29.103f152e.js"><link rel="prefetch" href="/assets/js/30.6ed053ad.js"><link rel="prefetch" href="/assets/js/31.9765a601.js"><link rel="prefetch" href="/assets/js/32.f0ea1dda.js"><link rel="prefetch" href="/assets/js/33.2d5858ee.js"><link rel="prefetch" href="/assets/js/34.3fa46443.js"><link rel="prefetch" href="/assets/js/35.5736c874.js"><link rel="prefetch" href="/assets/js/36.673acdbd.js"><link rel="prefetch" href="/assets/js/37.8eb67722.js"><link rel="prefetch" href="/assets/js/38.43eaf514.js"><link rel="prefetch" href="/assets/js/39.bba3b7db.js"><link rel="prefetch" href="/assets/js/4.bea149a6.js"><link rel="prefetch" href="/assets/js/40.c36e887d.js"><link rel="prefetch" href="/assets/js/41.8f00702e.js"><link rel="prefetch" href="/assets/js/42.a4e55caf.js"><link rel="prefetch" href="/assets/js/43.71db9a0b.js"><link rel="prefetch" href="/assets/js/44.86191c7c.js"><link rel="prefetch" href="/assets/js/45.5fce8d08.js"><link rel="prefetch" href="/assets/js/46.d8689b11.js"><link rel="prefetch" href="/assets/js/47.32fb444c.js"><link rel="prefetch" href="/assets/js/48.fd9456ea.js"><link rel="prefetch" href="/assets/js/49.05a125bc.js"><link rel="prefetch" href="/assets/js/5.414d2eb4.js"><link rel="prefetch" href="/assets/js/50.68ec5a64.js"><link rel="prefetch" href="/assets/js/52.8340a0a8.js"><link rel="prefetch" href="/assets/js/53.8286254b.js"><link rel="prefetch" href="/assets/js/6.4732b70d.js"><link rel="prefetch" href="/assets/js/7.525e8cc4.js"><link rel="prefetch" href="/assets/js/8.05c8882d.js"><link rel="prefetch" href="/assets/js/9.c2d945ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc3511f1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/计算机组成原理/基本结构.html" class="active sidebar-link">计算机基本结构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#冯诺伊曼结构" class="sidebar-link">冯诺伊曼结构</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#存储器" class="sidebar-link">存储器</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#控制器" class="sidebar-link">控制器</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#运算器" class="sidebar-link">运算器</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#内部总线" class="sidebar-link">内部总线</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#计算机执行指令的过程" class="sidebar-link">计算机执行指令的过程</a></li><li class="sidebar-sub-header"><a href="/计算机组成原理/基本结构.html#计算机输入与输出" class="sidebar-link">计算机输入与输出</a></li></ul></li><li><a href="/计算机组成原理/指令系统.html" class="sidebar-link">指令系统</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="计算机基本结构"><a href="#计算机基本结构" class="header-anchor">#</a> 计算机基本结构</h1> <h2 id="冯诺伊曼结构"><a href="#冯诺伊曼结构" class="header-anchor">#</a> 冯诺伊曼结构</h2> <ul><li><strong>控制计算机的程序</strong>应该<strong>存放在存储器中</strong>，而不是由开关连线实现，开关连线会降低计算机的运行效率</li> <li><strong>计算机</strong>应该<strong>采用二进制</strong>而不是十进制，十进制的方式会导致计算机内部结构变得非常复杂</li> <li>计算机的内部结构由<strong>运算器</strong>，<strong>控制器</strong>，<strong>储存器</strong>，<strong>输入设备</strong>，<strong>输出设备</strong>这五个部分组成</li> <li><strong>数据</strong>和<strong>程序</strong>均以<strong>二进制</strong>的形式<strong>不区别</strong>的存放在储存器中，存放的位置由存储器地址（内存地址）指定</li> <li>每个内存地址都对应着一个储存单元，数据存在存储单元中</li> <li>计算机工作时能够<strong>自动</strong>从储存器中读取指令并执行</li> <li>指令由操作码和地址码构成，操作码表示计算机要做操作，例如指出寻址(地址)方式，定义参加运算的数据类型，定义参加运算的数据的长度</li></ul> <h3 id="计算机的五大组成部分"><a href="#计算机的五大组成部分" class="header-anchor">#</a> 计算机的五大组成部分</h3> <ul><li>运算器 <strong>CA</strong> central arithmetical</li> <li>控制器 <strong>CC</strong> central control</li> <li>存储器 <strong>M</strong> memory</li> <li>输入设备 <strong>I</strong> inpit</li> <li>输出设备 <strong>O</strong> output</li></ul> <p><img src="/img/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84%E5%9B%BE.svg" alt="冯诺依曼结构图"></p> <ul><li><strong>CPU和存储器之间通过总线连接</strong>，总线可以细化为<strong>控制总线</strong>，<strong>地址总线</strong>，<strong>数据总线</strong></li></ul> <p><strong>随机存储器（RAM）</strong>： 可以进行读取和写入，但断电后内容就会丢失。<strong>对应冯诺依曼结构中的储存器</strong>一般称之为内存或主存储器</p> <p><strong>移位寄存器（I/O）</strong>：用来进行输入和输出</p> <p><strong>微处理器(CPU)</strong>：一片或几片大规模集成电路组成的中央处理器，它用于读取指令、执行指令，以及与外界存储器和逻辑部件交换信息等操作，是微型计算机的运算控制部分。它可与存储器和外围电路芯片组成微型计算机。<strong>对应冯诺依曼结构中的控制器和运算器</strong></p> <p><strong>只读存储器（ROM）</strong>：用来存放一些指令，只能读取不能写入(第一次写入后就不能修改)，断电以后内容不会丢失，<strong>不包括在冯诺依曼结构中</strong></p> <h3 id="计算机运行过程"><a href="#计算机运行过程" class="header-anchor">#</a> 计算机运行过程</h3> <p><img src="/img/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.svg" alt="计算机运行过程"></p> <p>首先，<strong>程序和数据</strong>通过<strong>输入设备</strong>进入<strong>存储器</strong>，然后<strong>控制器</strong>发出<strong>地址</strong>给<strong>存储器</strong>，并从<strong>存储器</strong>中获得程序中对应的<strong>指令</strong>，这时控制器会发出命令给<strong>运算器</strong>，指挥<strong>运算器</strong>对<strong>存储器</strong>中的<strong>数据</strong>进行相应的<strong>运算</strong>，<strong>运算器</strong>会<strong>返回</strong>一些运算<strong>状态</strong>告诉<strong>控制器</strong>，例如运算是否成功，还会把运算后的<strong>结果</strong>存放在<strong>存储器</strong>中，最后通过<strong>输出设备</strong>输出结果。输出设备可以是显示屏，音响，或者一些存储设备等</p> <h2 id="存储器"><a href="#存储器" class="header-anchor">#</a> 存储器</h2> <ul><li>设计计算机时确定存储器的编址方式</li> <li>每个存储单元存放<strong>8位</strong>二进制数</li> <li>每个存储单元的地址是<strong>唯一的</strong>，不同存储单元的地址<strong>互不相同</strong></li> <li><strong>地址总线</strong>用来访问（读取/写入）计算机<strong>内存地址</strong>，地址总线宽度决定了CPU可以访问的物理地址空间，简单地说就是CPU到底能够使用多大容量的内存。如果地址总线宽度为<strong>n</strong>，则CPU能管理的存储单元是<mjx-container jax="SVG" class="MathJax" style="direction:ltr;position:relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.279ex" height="1.528ex" role="img" focusable="false" viewBox="0 -675.5 1007.3 675.5" aria-hidden="true" style="overflow:visible;min-height:1px;min-width:1px;vertical-align:0;"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" style="stroke-width:3;"></path></g><g data-mml-node="mi" transform="translate(533,363) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" style="stroke-width:3;"></path></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top:0px;left:0px;clip:rect(1px, 1px, 1px, 1px);-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;padding:1px 0px 0px 0px;border:0px;display:block;width:auto;overflow:hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mi>n</mi></msup></math></mjx-assistive-mml></mjx-container>个，假设地址总线宽度为32位，那么CPU可以管理的存储单元为<mjx-container jax="SVG" class="MathJax" style="direction:ltr;position:relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.919ex" height="1.887ex" role="img" focusable="false" viewBox="0 -833.9 1290.1 833.9" aria-hidden="true" style="overflow:visible;min-height:1px;min-width:1px;vertical-align:0;"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" style="stroke-width:3;"></path></g><g data-mml-node="TeXAtom" transform="translate(533,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" style="stroke-width:3;"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)" style="stroke-width:3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top:0px;left:0px;clip:rect(1px, 1px, 1px, 1px);-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;padding:1px 0px 0px 0px;border:0px;display:block;width:auto;overflow:hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mrow data-mjx-texclass="ORD"><mn>32</mn></mrow></msup></math></mjx-assistive-mml></mjx-container>=4GB</li> <li><strong>数据总线</strong>传输CPU要读写的<strong>数据</strong>，数据总线的宽度一般为<strong>存储单元位宽</strong>的<strong>整数倍</strong></li> <li><strong>控制总线</strong>用于传送控制信号和时序信号，用于接收CPU的读写信号或者反馈传输已经完成的信号</li></ul> <h2 id="控制器"><a href="#控制器" class="header-anchor">#</a> 控制器</h2> <ul><li><strong>指令寄存器(IR)</strong> 用于存放正在执行或即将执行的指令</li> <li><strong>程序计数器(PC)</strong> 用于存放下一条指令的单元地址，具有自动递增的计数功能</li> <li><strong>存储器地址寄存器(MAR)</strong> 用于存放CPU访问存储器时正在读写的地址</li> <li><strong>内存数据寄存器(MDR)</strong> 用于存放CPU正在读取或写入存储单元的数据</li> <li><strong>指令译码部件</strong> 用于对IR中的指令进行译码，以确定IR中存放的是哪一条指令</li> <li>当确定指令之后，控制电路就可以产生对应的控制信号，控制信号在时许脉冲的同步下控制各个部件的动作</li></ul> <h2 id="运算器"><a href="#运算器" class="header-anchor">#</a> 运算器</h2> <ul><li>运算器用于完成运算，运算可以分为<strong>算数运算</strong>和<strong>逻辑运算</strong></li> <li>算数运算为<strong>加</strong>，<strong>减</strong>，<strong>乘</strong>，<strong>除</strong>等</li> <li>逻辑运算为<strong>或</strong>，<strong>与</strong>，<strong>非</strong>等</li> <li><strong>ALU</strong> 这是运算器的核心部件，用于完成算术运算和逻辑运算</li></ul> <p><img src="/img/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%BF%90%E7%AE%97%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84.svg" alt="运算器结构"></p> <ul><li><strong>X</strong>，<strong>Y</strong>，<strong>Z</strong>表示用于暂时保存数据的寄存器</li> <li>图中的ALU有两输入口和一个输出口，如果要进行加法运算，要做运算的两个数分别从A端口和B端口输入，通过ALU运算后将结果输出到Z</li> <li>在ALU运算时会产生各种状态保存在<strong>寄存器F</strong>中，例如，是否为负数，是否进位，是否溢出等</li> <li>运算器运算的数据是在存储器中读取的，为了提高效率就会设置一个临时存放数据的地方，这就是<strong>通用寄存器</strong></li> <li>通用寄存器中有n个，通用寄存器中的数据来自于存储器也可以来自于其他通用寄存器或者ALU的输出</li> <li>可以在两个不同的寄存器间传递数据，也可以在ALU和通用寄存器间传递数据</li></ul> <h2 id="内部总线"><a href="#内部总线" class="header-anchor">#</a> 内部总线</h2> <ul><li>内部总线用于在CPU各个部件间传递数据，如果CPU中的一个部件要把数据传递给另一个部件时就要通过内部总线</li></ul> <h2 id="计算机执行指令的过程"><a href="#计算机执行指令的过程" class="header-anchor">#</a> 计算机执行指令的过程</h2> <p><img src="/img/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%89%A7%E8%A1%8C%E6%8C%87%E4%BB%A4%E7%9A%84%E8%BF%87%E7%A8%8B.svg" alt="计算机执行指令的过程"></p> <details class="custom-block details"><summary>取指令：  控制器将指令的地址交给存储器，存储器按照给定的地址读出指令并送回控制器</summary> <ol><li>首先，<strong>控制器</strong>发出信号将<strong>PC</strong>中预执行的<strong>指令地址</strong>通过<strong>内部总线</strong>传送到<strong>MAR</strong>中</li> <li><strong>CPU中MAR</strong>通过<strong>地址总线</strong>把<strong>地址</strong>传送给<strong>存储器</strong>，<strong>存储器的MAR</strong>就会收到<strong>该地址</strong>并保存下来。同时，<strong>控制电路</strong>发出控制信号告诉<strong>存储器</strong>此次访问要进行读取数据的操作，<strong>存储器的控制逻辑</strong>会收到<strong>控制总线</strong>传来的信号，得知这次访问要做的操作是读操作。</li> <li><strong>存储器</strong>通过<strong>地址译码器</strong>找到<strong>地址</strong>对应的内存空间中存放的<strong>内容</strong></li> <li>把找到的<strong>内容</strong>送到<strong>MDR</strong></li> <li>这时<strong>存储器的控制逻辑</strong>会向<strong>CPU</strong>反馈当前传输已经准备好了，同时<strong>MDR</strong>的内容通过数据总线传入<strong>CPU</strong>，随后<strong>CPU</strong>中的<strong>控制电路</strong>检测到<strong>存储器</strong>传送过来的信号，就知道当前数据总线上已经准备好了数据，因此<strong>MDR</strong>就会将当前传输过来的数据保存下来，这时CPU就获得了所要取的指令（现在获得的是指令编码，之后还需要翻译成指令）</li> <li>把<strong>MDR</strong>中的指令传送到<strong>IR</strong>中，并把<strong>PC</strong>中的地址<strong>更新</strong>为下一条指令所对应的<strong>地址</strong></li></ol></details> <details class="custom-block details"><summary>译码：控制器分析指令的操作性质，并向有关部件发出指令所需的控制信号</summary> <ol start="7"><li><strong>IR</strong>把指令编码送到<strong>指令译码</strong>部件中翻译成指令</li> <li>根据指令，控制电路产生控制信号传送到相关部件中</li></ol></details> <details class="custom-block details"><summary>执行指令：控制器从通用寄存器中或存储器中取出操作数，并命令运算器对操作数进行指令规定的运算</summary> <ol start="9"><li><p>根据指令，需要取操作数，<strong>CPU的MAR</strong>获取操作数的<strong>地址</strong>。之后的步骤与取指阶段类似，从存储器中获取的数据保存到<strong>CPU的MDR</strong>中</p></li> <li><p><strong>控制器</strong>将<strong>MDR</strong>中的数据暂存到<strong>寄存器Y</strong>中，这时一个操作数已经准备好了。另一个操作数存放在其他的通用寄存器中，把这个操作数暂存在<strong>寄存器X</strong>中</p></li> <li><p>在控制电路的控制下<strong>ALU</strong>会对<strong>寄存器X</strong>和<strong>寄存器Y</strong>中的操作数进行运算，计算出的结果存放在<strong>寄存器Z</strong>中</p></li></ol></details> <details class="custom-block details"><summary>回写：将运算结果写入到通用寄存器或存储器</summary> <ol start="12"><li>把<strong>寄存器Z</strong>中的结果通过<strong>内部总线</strong>传送到<strong>通用寄存器</strong>中（通用寄存器不是一个寄存器，而是多个寄存器的总称），如果存放的寄存器中有内容，则原来存放的数据会被新的数据覆盖掉</li></ol></details> <ul><li>指令执行完毕后，获取下一个指令，继续重复这样的步骤</li></ul> <h2 id="计算机输入与输出"><a href="#计算机输入与输出" class="header-anchor">#</a> 计算机输入与输出</h2> <ul><li>常见的<strong>输出设备</strong>：显示器、打印机、投影仪、绘图仪、喇叭等</li> <li>常见的<strong>输入设备</strong>： 键盘、鼠标、触摸屏 、扫描仪、摄像头、手写板、麦克风等</li></ul> <p><strong>在特殊情况下，一个设备既可以做输入设备，也可以做输出设备</strong>。
+例如<strong>硬盘</strong>，<strong>硬盘</strong>既可以<strong>输出数据</strong>，也可以<strong>写入数据</strong>，还可以<strong>保存数据</strong>。硬盘保存数据的<strong>磁片</strong>可以叫做<strong>外部记录介质</strong>，而硬盘中的<strong>电路和控制芯片</strong>可以认为是<strong>输入或输出设备</strong>的一部分</p> <p><img src="/img/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%A4%BA%E6%84%8F%E5%9B%BE.svg" alt="输入输出示意"></p> <p><strong>假设CPU和存储器已经开始工作了，现在我们要通过调整这些开关来控制灯泡的亮暗</strong>。我们将<strong>输入输出设备</strong>中<strong>地址为1111的单元</strong>连接到这些手动<strong>开关</strong>。这个单元有8个比特，<strong>每个比特连接一个开关</strong>，当开关拨动在<strong>上方时</strong>，对应的位<strong>为1</strong>，开关在<strong>下方时</strong>对应的位<strong>为0</strong>，另一个<strong>地址为1110</strong>的<strong>单位</strong>连接到这<strong>8个灯泡</strong>，单位中的<strong>每个位</strong>都<strong>对应</strong>着<strong>一个灯泡</strong>，分别<strong>用0和1表示高低电平</strong>，<strong>高电平时灯泡亮，低电平时灯泡灭</strong>。
+现在计算机会执行一个指令，这个指令是<strong>读取输入设备中地址为1111的数据</strong>（这些手动开关的状态），<strong>具体如下：</strong></p> <p><strong>输入：</strong></p> <p><strong>CPU</strong>先将输入设备(手动开关)的<strong>地址</strong>（1111）发送到<strong>地址总线上</strong>，总线上的一些电路会识别这个地址，得知这个地址应该发送到输入设备，与此同时<strong>CPU</strong>会通过<strong>控制总线</strong>向<strong>输入设备</strong>发出read信号，告诉<strong>输入设备</strong>目前是一个<strong>读操作</strong>。这时<strong>输入设备</strong>的<strong>控制逻辑</strong>和<strong>地址译码器</strong>就会从<strong>CPU</strong>发送过来的<strong>地址</strong>（1111）找到对应单元里的<strong>数据</strong>，然后通过<strong>数据总线</strong>将数据传回到<strong>CPU</strong>，这样就完成了<strong>输入信息</strong>的读取工作，（之后CPU可以对这个数据进行运算，处理或保存在存储器中，以便之后使用）</p> <p><strong>输出：</strong></p> <p><strong>CPU</strong>先将输出设备(灯泡)的<strong>地址</strong>（1110）发送到<strong>地址总线上</strong>，总线上的一些电路会识别这个地址，得知这个地址应该发送到输出设备，与此同时<strong>CPU</strong>会通过<strong>控制总线</strong>向<strong>输出设备</strong>发出write信号，告诉<strong>输出设备</strong>目前是一个<strong>写操作</strong>。然后通过<strong>数据总线</strong>将<strong>要输出的数据</strong>传输给<strong>输出设备</strong>，这时输出设备就会根据总线传输过来的信息将<strong>要输出的数据</strong>写入输出设备地址（1110）所对应的<strong>单元</strong>，当数据写入后，根据数据小灯泡会受到高低不同的电压，这时1对应的灯泡亮，0对应的灯泡灭</p> <p>通过以上方式，我们还可以加入不同的输入输出设备，制造出各种各样的电子产品</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/计算机组成原理/指令系统.html">
+        指令系统
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.3a179c08.js" defer></script><script src="/assets/js/2.9ce38e7a.js" defer></script><script src="/assets/js/51.e6427b49.js" defer></script><script src="/assets/js/3.a3de281d.js" defer></script>
+  </body>
+</html>

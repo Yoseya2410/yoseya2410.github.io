@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>函数 | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/notes.png">
+    <meta name="description" content="这里汇集了我在自然科学,计算机,信息技术,电子技术等领域学到的知识">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="keywords" content="数学,物理,计算机,电子,互联网,信息,知识,笔记,釉色鸭,yoseya,博客,blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc3511f1.css" as="style"><link rel="preload" href="/assets/js/app.3a179c08.js" as="script"><link rel="preload" href="/assets/js/2.9ce38e7a.js" as="script"><link rel="preload" href="/assets/js/16.1698229b.js" as="script"><link rel="preload" href="/assets/js/3.a3de281d.js" as="script"><link rel="prefetch" href="/assets/js/10.29cfd664.js"><link rel="prefetch" href="/assets/js/11.6af3e845.js"><link rel="prefetch" href="/assets/js/12.fc606c1f.js"><link rel="prefetch" href="/assets/js/13.da6f7b9d.js"><link rel="prefetch" href="/assets/js/14.51f6614a.js"><link rel="prefetch" href="/assets/js/15.cebed5bc.js"><link rel="prefetch" href="/assets/js/17.6850c45b.js"><link rel="prefetch" href="/assets/js/18.e7de597b.js"><link rel="prefetch" href="/assets/js/19.de8b97d5.js"><link rel="prefetch" href="/assets/js/20.4f31f3de.js"><link rel="prefetch" href="/assets/js/21.05908e5b.js"><link rel="prefetch" href="/assets/js/22.d6e87ed0.js"><link rel="prefetch" href="/assets/js/23.d45da811.js"><link rel="prefetch" href="/assets/js/24.17f7c0e2.js"><link rel="prefetch" href="/assets/js/25.145ff0ad.js"><link rel="prefetch" href="/assets/js/26.48f0e90d.js"><link rel="prefetch" href="/assets/js/27.0f997655.js"><link rel="prefetch" href="/assets/js/28.5995860d.js"><link rel="prefetch" href="/assets/js/29.103f152e.js"><link rel="prefetch" href="/assets/js/30.6ed053ad.js"><link rel="prefetch" href="/assets/js/31.9765a601.js"><link rel="prefetch" href="/assets/js/32.f0ea1dda.js"><link rel="prefetch" href="/assets/js/33.2d5858ee.js"><link rel="prefetch" href="/assets/js/34.3fa46443.js"><link rel="prefetch" href="/assets/js/35.5736c874.js"><link rel="prefetch" href="/assets/js/36.673acdbd.js"><link rel="prefetch" href="/assets/js/37.8eb67722.js"><link rel="prefetch" href="/assets/js/38.43eaf514.js"><link rel="prefetch" href="/assets/js/39.bba3b7db.js"><link rel="prefetch" href="/assets/js/4.bea149a6.js"><link rel="prefetch" href="/assets/js/40.c36e887d.js"><link rel="prefetch" href="/assets/js/41.8f00702e.js"><link rel="prefetch" href="/assets/js/42.a4e55caf.js"><link rel="prefetch" href="/assets/js/43.71db9a0b.js"><link rel="prefetch" href="/assets/js/44.86191c7c.js"><link rel="prefetch" href="/assets/js/45.5fce8d08.js"><link rel="prefetch" href="/assets/js/46.d8689b11.js"><link rel="prefetch" href="/assets/js/47.32fb444c.js"><link rel="prefetch" href="/assets/js/48.fd9456ea.js"><link rel="prefetch" href="/assets/js/49.05a125bc.js"><link rel="prefetch" href="/assets/js/5.414d2eb4.js"><link rel="prefetch" href="/assets/js/50.68ec5a64.js"><link rel="prefetch" href="/assets/js/51.e6427b49.js"><link rel="prefetch" href="/assets/js/52.8340a0a8.js"><link rel="prefetch" href="/assets/js/53.8286254b.js"><link rel="prefetch" href="/assets/js/6.4732b70d.js"><link rel="prefetch" href="/assets/js/7.525e8cc4.js"><link rel="prefetch" href="/assets/js/8.05c8882d.js"><link rel="prefetch" href="/assets/js/9.c2d945ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc3511f1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c/Hello world.html" class="sidebar-link">Hello world!</a></li><li><a href="/c/输入与输出.html" class="sidebar-link">输入与输出</a></li><li><a href="/c/变量.html" class="sidebar-link">变量</a></li><li><a href="/c/常量.html" class="sidebar-link">常量</a></li><li><a href="/c/数据类型.html" class="sidebar-link">数据类型</a></li><li><a href="/c/运算.html" class="sidebar-link">运算</a></li><li><a href="/c/判断.html" class="sidebar-link">判断</a></li><li><a href="/c/循环.html" class="sidebar-link">循环</a></li><li><a href="/c/控制循环语句.html" class="sidebar-link">循环控制语句</a></li><li><a href="/c/逃逸字符.html" class="sidebar-link">逃逸字符</a></li><li><a href="/c/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/c/逻辑运算.html" class="sidebar-link">逻辑运算</a></li><li><a href="/c/条件表达式.html" class="sidebar-link">条件表达式</a></li><li><a href="/c/函数.html" class="active sidebar-link">函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c/函数.html#什么是函数" class="sidebar-link">什么是函数？</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#函数返回值" class="sidebar-link">函数返回值</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#函数的先后关系" class="sidebar-link">函数的先后关系</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#函数原型" class="sidebar-link">函数原型</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#传值" class="sidebar-link">传值</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#本地变量" class="sidebar-link">本地变量</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#没有参数时" class="sidebar-link">没有参数时</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#逗号运算符" class="sidebar-link">逗号运算符</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#函数嵌套" class="sidebar-link">函数嵌套</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#可变参数" class="sidebar-link">可变参数</a></li><li class="sidebar-sub-header"><a href="/c/函数.html#函数递归" class="sidebar-link">函数递归</a></li></ul></li><li><a href="/c/数组.html" class="sidebar-link">数组</a></li><li><a href="/c/指针.html" class="sidebar-link">指针</a></li><li><a href="/c/字符串.html" class="sidebar-link">字符串</a></li><li><a href="/c/枚举.html" class="sidebar-link">枚举</a></li><li><a href="/c/结构.html" class="sidebar-link">结构</a></li><li><a href="/c/全局变量.html" class="sidebar-link">全局变量</a></li><li><a href="/c/编译预处理.html" class="sidebar-link">编译预处理</a></li><li><a href="/c/程序结构.html" class="sidebar-link">程序结构</a></li><li><a href="/c/文件.html" class="sidebar-link">文件</a></li><li><a href="/c/位运算.html" class="sidebar-link">位运算</a></li><li><a href="/c/实例.html" class="sidebar-link">实例</a></li><li><a href="/c/参考.html" class="sidebar-link">参考</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h1> <p>试想一下，我们要用C语言求从1开始加，一直加到10的值</p> <p>这个并不难，简单写一个循环就可以解决</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span><span class="token number">0</span> <span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span> i <span class="token operator">=</span> a<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> b<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        sum<span class="token operator">+=</span>i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>a是开始的值，b是结束的值</p> <p>如果我想同时得到1~10相加，20~30相加，30~40相加怎么办？</p> <p>你可能在想，那就按照同样的方法多写几个循环就好了。</p> <p>但是，这样非常麻烦，有没有什么可以一劳永逸的办法呢？</p> <p>有！我们可以把这个连续求和的循环写成一个函数，这样当使用它的时候就可以直接调用，不用再重复写代码了</p> <p>就像这样：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">void</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> a<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> b<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        sum <span class="token operator">+=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>55
+275
+385
+</code></pre></div><p>这是不是方便了许多</p> <h2 id="什么是函数"><a href="#什么是函数" class="header-anchor">#</a> 什么是函数？</h2> <p>在计算机语言中，函数就是一段代码，它可以接收多个参数(也可以不接收)，并返回一个值(也可以不返回)，你可以把一些代码封装成一个函数，当你使用的它时候，只需要写出它的函数名称就可以代表函数里的代码去运行,调用时格式是这样：<strong><code>name(x);</code></strong> name代表函数名，x代表里面的参数</p> <p>你也可以把参数输入在函数里，经过函数的处理后输出结果，就像上面的示例一样</p> <p>对于这样一个函数</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> a<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> b<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        sum <span class="token operator">+=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>最开始的<code>void sum(int a, int b)</code> 是函数头，括号<code>{ }</code> 里的叫做函数体</li> <li>在函数头中<code>void</code>是返回类型，<code>sum</code>是函数名，在<code>( )</code>中是参数表，参数表中的参数需要用<code>,</code>隔开</li> <li><code>void</code>是一种不返回的返回类型</li> <li>在调用函数的时候，除了函数名称一定要加上<code>()</code> 不然计算机不会以外你在调用函数</li></ul> <h2 id="函数返回值"><a href="#函数返回值" class="header-anchor">#</a> 函数返回值</h2> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> ret<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">&gt;</span> b<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> b<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+    <span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出</p> <div class="language- extra-class"><pre class="language-text"><code>2
+</code></pre></div><p>在这样的一个示例中，向函数<code>max</code>中输入参数1和2，来对比谁大，最后把大的那个值赋值给变量<code>ret</code>，再通过<code>return</code>返回这个值</p> <p>当然这仅仅是返回了值，并不会输出任何内容，如果要输入结果，可以先把值赋给一个变量，然后在输出这个变量的值，就像示例中那样。也可以</p> <p>像这样直接输出<code>printf(&quot;%d&quot;, max(1, 2));</code></p> <p>在这里<code>max</code>函数返回类型是int，这个类型是必须要返回值的所有一定要有<code>return</code> ，如果要写不用返回值的函数就用<code>void</code>来做函数的返回类型</p> <h2 id="函数的先后关系"><a href="#函数的先后关系" class="header-anchor">#</a> 函数的先后关系</h2> <p>C的编译器是自上而下的顺序分析代码，所以要把调用函数的代码，放在要调用的函数后面，不然会出现错误。先要有函数，才能调用这个函数，所以先要让计算机看到这个函数，然后再去调用函数时计算机才知道你调用的是什么</p> <p>当然，如果你非要把函数放在调用代码的后面，就必须在调用代码的前面写一个函数声明，告诉它有这样一个函数，等到代码执行到那个被调用的函数的时候再去执行之前这些调用的，就像这样</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//max函数的声明</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> ret<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">&gt;</span> b<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> b<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="函数原型"><a href="#函数原型" class="header-anchor">#</a> 函数原型</h2> <div class="language-c extra-class"><pre class="language-c"><code> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在一个函数中这样的代码就是函数的原型，它和函数头的区别在于有<code>;</code>结尾并且没有<code>{ }</code>里的函数体</p> <p>函数原型声明也可以写成这样(不写参数名，只写参数的数据类型)</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="传值"><a href="#传值" class="header-anchor">#</a> 传值</h2> <div class="language-c extra-class"><pre class="language-c"><code> <span class="token keyword">int</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+  a<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">;</span>
+  b<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">;</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">23</span><span class="token punctuation">)</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token number">45</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span><span class="token function">funtion</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token number">45</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+  <span class="token function">funtion</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+</code></pre></div><p>一个函数中的参数可以是数字，也可以是变量，还可以是另一个函数或者自己的函数返回的值，或者是一个表达式的计算结果</p> <h2 id="本地变量"><a href="#本地变量" class="header-anchor">#</a> 本地变量</h2> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> t <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+    b <span class="token operator">=</span> t<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+
+    <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;a=%d b=%d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这样一个代码中<code>swap</code>函数用来把a和b的值交换</p> <p>执行代码后，输出结果：</p> <div class="language-c extra-class"><pre class="language-c"><code>a<span class="token operator">=</span><span class="token number">5</span> b<span class="token operator">=</span><span class="token number">6</span>
+</code></pre></div><p>按道理应该把a和b的值交换了，但在这里，a还是5，b还是6</p> <p>导致这种问题的产生的原因是函数间变量的隔离</p> <p>每个函数有自己的变量空间，参数也在这个空间中。函数中的变量和该函数外的其他函数没关系</p> <p>在这段代码中<code>swap</code>函数里面的变量a和b于函数外的变量a和b不是同一个变量，它们只是名称相同，没有任何关系</p> <p>一个函数在运行中使用的变量是本地变量，是这个函数独有的</p> <p>所有定义在函数内部的变量都叫做本地变量，参数也是本地变量</p> <p>**变量的生存期：**变量什么时候出现，到什么时候消亡</p> <p>**变量的作用域：**在代码的什么范围内可以访问这个变量，这个变量可以起作用</p> <p>在一个函数中运行时，不能访问这个函数外的变量，因为那些变量不在这个函数的作用域中</p> <ul><li>本地变量必须定义在块里,块就是的<code>{ }</code> 它可以是函数的块，也可以是语句的块，还可以把任意一个<code>{ }</code> 当作块</li></ul> <p>例如这个代码</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+
+ 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">&lt;</span> b<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+       <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这些代码中变量<code>i</code>在<code>if</code>的这个块里，但是如果运行这个代码时计算机会报错，因为这个<code>if</code>里的变量的生存期和作用域仅仅只在这个<code>if</code>中</p> <ul><li>但在块外的定义的变量在块内依然有效</li></ul> <p>但如果块里的变量的名称和块外的变量的名称重复时，代码就可以执行，不会报错，例如这样</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>0
+5
+</code></pre></div><p>在这个块里输出的值为0，覆盖了变量之前的值，但从块里出来后输出的值依然是变量最开始定义的值</p> <ul><li>不能在同一个块里定义同名的变量，例如</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>本地变量不会被默认初始化，但参数会初始化，当你在添参数的时候要有一个值来初始化参数</li></ul> <h2 id="没有参数时"><a href="#没有参数时" class="header-anchor">#</a> 没有参数时</h2> <p><code>viod fun(void)</code></p> <p>当函数的参数表中填写的是void时，明确告诉bianyiq这个函数不接受任何参数</p> <p><code>viod fun()</code></p> <p>如果函数的参数表中没有参数时，表示不确定是否有参数，可以有，也可以没有</p> <h2 id="逗号运算符"><a href="#逗号运算符" class="header-anchor">#</a> 逗号运算符</h2> <p><code>,</code> 是运算符，但在函数中<code>f(a,b)</code> ，这里的逗号只是一种标点符号，用来隔开参数，当像这样<code>f((a,b))</code> 时，这里的逗号就是运算符</p> <h2 id="函数嵌套"><a href="#函数嵌套" class="header-anchor">#</a> 函数嵌套</h2> <ul><li><strong>C语言不允许函数嵌套</strong></li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">void</span> <span class="token function">func2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+         
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>虽然这样是非法的，但在实际操作中编译器依然可以进行编译，程序依然可以正常运行，但在调用函数时，不能调用嵌套在函数中的函数，如果要调用这个嵌套函数必须和函数在同一个块<code>{}</code>里</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">void</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+         
+    <span class="token punctuation">}</span>
+    <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//可以调用函数</span>
+<span class="token punctuation">}</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//不能调用函数</span>
+</code></pre></div><h2 id="可变参数"><a href="#可变参数" class="header-anchor">#</a> 可变参数</h2> <p>C语言中<strong>允许定义</strong>一个能根据具体的需求接受<strong>可变数量的参数</strong>的<strong>函数</strong></p> <ul><li>参数<code>int num</code> 表示传递的参数总数</li> <li>参数写成省略号<code>...</code>,表示可变数量的参数,<code>...</code>要放在参数表的最后</li> <li>省略号前面可以设置其他参数</li> <li>使用时需要引入头文件<code>stdarg.h</code>，该文件提供了实现可变参数功能的函数和宏</li></ul> <div class="language-c extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br></div><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token function">func</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">func</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>使用示例：</strong></p> <ul><li>在函数定义中创建一个<code>va_list</code>类型变量，<code>va_list</code>变量为一个参数列表，该类型是在<code>stdarg.h</code>头文件中定义的</li> <li>使用<code>int</code>参数和<code>va_start</code>宏来初始化</li> <li>使用<code>va_arg</code>宏和<code>va_list</code>变量来访问参数列表中的每个项</li> <li>使用宏<code>va_end</code>来清理赋予<code>va_list</code>变量的内存</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdarg.h&gt;</span></span>
+ 
+<span class="token keyword">double</span> <span class="token function">average</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+ 
+    va_list valist<span class="token punctuation">;</span> <span class="token comment">//可变参数列表</span>
+    <span class="token keyword">double</span> sum <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+ 
+    <span class="token function">va_start</span><span class="token punctuation">(</span>valist<span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//为列表中的参数初始化</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//遍历赋给valist列表中的参数</span>
+    <span class="token punctuation">{</span>
+       sum <span class="token operator">+=</span> <span class="token function">va_arg</span><span class="token punctuation">(</span>valist<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//把每个可变参数都加起来</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">va_end</span><span class="token punctuation">(</span>valist<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//清理valist列表中占用的内存</span>
+ 
+    <span class="token keyword">return</span> sum<span class="token operator">/</span>num<span class="token punctuation">;</span> <span class="token comment">//返回平均数</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Average of 2, 3, 4, 5 = %f\n&quot;</span><span class="token punctuation">,</span> <span class="token function">average</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Average of 5, 10, 15 = %f\n&quot;</span><span class="token punctuation">,</span> <span class="token function">average</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="函数递归"><a href="#函数递归" class="header-anchor">#</a> 函数递归</h2> <ul><li>在C语言中，函数可以调用其自身</li> <li>但在使用递归时，需要定义一个从函数退出的条件，否则会进入死循环。</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">recursion</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token function">recursion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//函数调用自身</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token function">recursion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用实例：</p> <ul><li><a href="/c/实例.html#数的阶乘">数的阶乘</a></li> <li><a href="/c/实例.html#斐波那契数列">斐波那契数列</a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c/条件表达式.html" class="prev">
+        条件表达式
+      </a></span> <span class="next"><a href="/c/数组.html">
+        数组
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.3a179c08.js" defer></script><script src="/assets/js/2.9ce38e7a.js" defer></script><script src="/assets/js/16.1698229b.js" defer></script><script src="/assets/js/3.a3de281d.js" defer></script>
+  </body>
+</html>

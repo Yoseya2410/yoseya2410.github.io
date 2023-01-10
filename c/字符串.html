@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字符串 | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/notes.png">
+    <meta name="description" content="这里汇集了我在自然科学,计算机,信息技术,电子技术等领域学到的知识">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="keywords" content="数学,物理,计算机,电子,互联网,信息,知识,笔记,釉色鸭,yoseya,博客,blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc3511f1.css" as="style"><link rel="preload" href="/assets/js/app.3a179c08.js" as="script"><link rel="preload" href="/assets/js/2.9ce38e7a.js" as="script"><link rel="preload" href="/assets/js/20.4f31f3de.js" as="script"><link rel="preload" href="/assets/js/3.a3de281d.js" as="script"><link rel="prefetch" href="/assets/js/10.29cfd664.js"><link rel="prefetch" href="/assets/js/11.6af3e845.js"><link rel="prefetch" href="/assets/js/12.fc606c1f.js"><link rel="prefetch" href="/assets/js/13.da6f7b9d.js"><link rel="prefetch" href="/assets/js/14.51f6614a.js"><link rel="prefetch" href="/assets/js/15.cebed5bc.js"><link rel="prefetch" href="/assets/js/16.1698229b.js"><link rel="prefetch" href="/assets/js/17.6850c45b.js"><link rel="prefetch" href="/assets/js/18.e7de597b.js"><link rel="prefetch" href="/assets/js/19.de8b97d5.js"><link rel="prefetch" href="/assets/js/21.05908e5b.js"><link rel="prefetch" href="/assets/js/22.d6e87ed0.js"><link rel="prefetch" href="/assets/js/23.d45da811.js"><link rel="prefetch" href="/assets/js/24.17f7c0e2.js"><link rel="prefetch" href="/assets/js/25.145ff0ad.js"><link rel="prefetch" href="/assets/js/26.48f0e90d.js"><link rel="prefetch" href="/assets/js/27.0f997655.js"><link rel="prefetch" href="/assets/js/28.5995860d.js"><link rel="prefetch" href="/assets/js/29.103f152e.js"><link rel="prefetch" href="/assets/js/30.6ed053ad.js"><link rel="prefetch" href="/assets/js/31.9765a601.js"><link rel="prefetch" href="/assets/js/32.f0ea1dda.js"><link rel="prefetch" href="/assets/js/33.2d5858ee.js"><link rel="prefetch" href="/assets/js/34.3fa46443.js"><link rel="prefetch" href="/assets/js/35.5736c874.js"><link rel="prefetch" href="/assets/js/36.673acdbd.js"><link rel="prefetch" href="/assets/js/37.8eb67722.js"><link rel="prefetch" href="/assets/js/38.43eaf514.js"><link rel="prefetch" href="/assets/js/39.bba3b7db.js"><link rel="prefetch" href="/assets/js/4.bea149a6.js"><link rel="prefetch" href="/assets/js/40.c36e887d.js"><link rel="prefetch" href="/assets/js/41.8f00702e.js"><link rel="prefetch" href="/assets/js/42.a4e55caf.js"><link rel="prefetch" href="/assets/js/43.71db9a0b.js"><link rel="prefetch" href="/assets/js/44.86191c7c.js"><link rel="prefetch" href="/assets/js/45.5fce8d08.js"><link rel="prefetch" href="/assets/js/46.d8689b11.js"><link rel="prefetch" href="/assets/js/47.32fb444c.js"><link rel="prefetch" href="/assets/js/48.fd9456ea.js"><link rel="prefetch" href="/assets/js/49.05a125bc.js"><link rel="prefetch" href="/assets/js/5.414d2eb4.js"><link rel="prefetch" href="/assets/js/50.68ec5a64.js"><link rel="prefetch" href="/assets/js/51.e6427b49.js"><link rel="prefetch" href="/assets/js/52.8340a0a8.js"><link rel="prefetch" href="/assets/js/53.8286254b.js"><link rel="prefetch" href="/assets/js/6.4732b70d.js"><link rel="prefetch" href="/assets/js/7.525e8cc4.js"><link rel="prefetch" href="/assets/js/8.05c8882d.js"><link rel="prefetch" href="/assets/js/9.c2d945ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc3511f1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c/Hello world.html" class="sidebar-link">Hello world!</a></li><li><a href="/c/输入与输出.html" class="sidebar-link">输入与输出</a></li><li><a href="/c/变量.html" class="sidebar-link">变量</a></li><li><a href="/c/常量.html" class="sidebar-link">常量</a></li><li><a href="/c/数据类型.html" class="sidebar-link">数据类型</a></li><li><a href="/c/运算.html" class="sidebar-link">运算</a></li><li><a href="/c/判断.html" class="sidebar-link">判断</a></li><li><a href="/c/循环.html" class="sidebar-link">循环</a></li><li><a href="/c/控制循环语句.html" class="sidebar-link">循环控制语句</a></li><li><a href="/c/逃逸字符.html" class="sidebar-link">逃逸字符</a></li><li><a href="/c/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/c/逻辑运算.html" class="sidebar-link">逻辑运算</a></li><li><a href="/c/条件表达式.html" class="sidebar-link">条件表达式</a></li><li><a href="/c/函数.html" class="sidebar-link">函数</a></li><li><a href="/c/数组.html" class="sidebar-link">数组</a></li><li><a href="/c/指针.html" class="sidebar-link">指针</a></li><li><a href="/c/字符串.html" class="active sidebar-link">字符串</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c/字符串.html#字符串的变量与常量" class="sidebar-link">字符串的变量与常量</a></li><li class="sidebar-sub-header"><a href="/c/字符串.html#字符串赋值" class="sidebar-link">字符串赋值</a></li><li class="sidebar-sub-header"><a href="/c/字符串.html#字符串的输入输出" class="sidebar-link">字符串的输入输出</a></li><li class="sidebar-sub-header"><a href="/c/字符串.html#字符串函数" class="sidebar-link">字符串函数</a></li></ul></li><li><a href="/c/枚举.html" class="sidebar-link">枚举</a></li><li><a href="/c/结构.html" class="sidebar-link">结构</a></li><li><a href="/c/全局变量.html" class="sidebar-link">全局变量</a></li><li><a href="/c/编译预处理.html" class="sidebar-link">编译预处理</a></li><li><a href="/c/程序结构.html" class="sidebar-link">程序结构</a></li><li><a href="/c/文件.html" class="sidebar-link">文件</a></li><li><a href="/c/位运算.html" class="sidebar-link">位运算</a></li><li><a href="/c/实例.html" class="sidebar-link">实例</a></li><li><a href="/c/参考.html" class="sidebar-link">参考</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h1> <ul><li>C语言的字符串是以字符数组的形式存在的</li></ul> <p>这是一个<strong>字符数组</strong>，但它<strong>并不是C语言的字符串</strong>,因为它不能用字符串的方式去做运算</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> word<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token char">'h'</span><span class="token punctuation">,</span><span class="token char">'e'</span><span class="token punctuation">,</span><span class="token char">'l'</span><span class="token punctuation">,</span><span class="token char">'l'</span><span class="token punctuation">,</span><span class="token char">'o'</span><span class="token punctuation">}</span>
+</code></pre></div><p>当我们在数组最后增加一个为<code>'\0'</code>的单元时，它就变成了C语言的字符串，这时它可以用来做字符串的运算</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> word<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token char">'h'</span><span class="token punctuation">,</span><span class="token char">'e'</span><span class="token punctuation">,</span><span class="token char">'l'</span><span class="token punctuation">,</span><span class="token char">'l'</span><span class="token punctuation">,</span><span class="token char">'o'</span><span class="token punctuation">,</span><span class="token char">'\0'</span><span class="token punctuation">}</span>
+</code></pre></div><ul><li>字符串是一个以整数0结尾的一串字符</li> <li><code>0</code>和<code>'\0'</code>是一样的，但是和<code>'0'</code>不同，因为<code>'0'</code>是字符0，而字符串后面的是整数0</li> <li>空字符(NULL)在实际底层调用中就是0，<code>\0</code>是转义字符，意思是告诉编译器这不是字符0，而是空字符</li> <li>0标志字符串的结束，但它并不是字符串的一部分</li> <li>计算字符串长度时不包括这个0</li> <li>字符串以数组的形式存在，以数组或指针的形式访问</li></ul> <h2 id="字符串的变量与常量"><a href="#字符串的变量与常量" class="header-anchor">#</a> 字符串的变量与常量</h2> <p>由<code>&quot;</code>括起来的东西叫做字符串的常量(字符串的字面量）</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;hello&quot;
+</code></pre></div><ul><li>它会被编译器变成一个字符数组存放在某处，字符数组的长度是<strong>字符长度+1</strong></li> <li>两个相邻的字符串常量会被自动连接起来</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;这是字符串&quot;</span> <span class="token string">&quot;这也是段字符串&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果:</p> <div class="language- extra-class"><pre class="language-text"><code>这是字符串这也是段字符串
+</code></pre></div><p>如果在使用<code>printf</code>输出时，要输出的内容太多，就需要换行，这时需要在这行字符的结尾加上<code>\</code>就可以输出下一行的内容，如果不加<code>\</code>就会出错</p> <ul><li>但注意如果下一行内容前有空格，这时会将空格一并输出</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;这是字符串\
+这也是段字符串&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果:</p> <div class="language- extra-class"><pre class="language-text"><code>这是字符串这也是段字符串
+</code></pre></div><h3 id="指针表达字符串的变量"><a href="#指针表达字符串的变量" class="header-anchor">#</a> 指针表达字符串的变量</h3> <p>这是一个叫str的指针指向了一个字符数组，数组中的内容是hello</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span>str <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果两个字符串输出的内容一样时，它们都会指向同一个地址</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>s <span class="token operator">=</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>s2 <span class="token operator">=</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;s =%p\n&quot;</span><span class="token punctuation">,</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;s2=%p\n&quot;</span><span class="token punctuation">,</span>s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>s =0000000000404000
+s2=0000000000404000
+</code></pre></div><p>这两个字符串指向了同一个地址，但这个地址很小，因为它存放在程序的代码段，代码段里面的代码<strong>不可以在运行的时候被修改</strong>，在编译时就已经确定，如果修改，就会出错。所以可以把它当作<strong>常量</strong>。如果想要字符串能被修改，应该使用<a href="/c/字符串.html#数组表达字符串">数组表达字符串</a></p> <p>如果两字符串不同时，它们就不会指向同一个地址</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>s <span class="token operator">=</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>s2 <span class="token operator">=</span><span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;s =%p\n&quot;</span><span class="token punctuation">,</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;s2=%p\n&quot;</span><span class="token punctuation">,</span>s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>s =0000000000404000
+s2=0000000000404006
+</code></pre></div><p>现在这两个字符串的地址就不相同了，它们之间相差了6，因为第一个字符串里总共有五个字符，再加上字符串结尾默认生成的0总共占6个字节，所以字符串s2的地址为404006</p> <h3 id="数组表达字符串"><a href="#数组表达字符串" class="header-anchor">#</a> 数组表达字符串</h3> <p>这是一个字符数组word，字符串是<code>hello</code>，字符串中的每一个字符都按照顺序依次放在数组的单元中</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> word<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>使用这种形式的字符串是<strong>可以修改</strong>的，因为它会<strong>存放在本地变量</strong>中</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">char</span> word<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%c\n&quot;</span><span class="token punctuation">,</span>word<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//修改前输出</span>
+word<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">'b'</span><span class="token punctuation">,</span><span class="token comment">//修改为b</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%c\n&quot;</span><span class="token punctuation">,</span>word<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//修改后输出</span>
+
+<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>h
+b
+</code></pre></div><p><strong>定义字符串的长度大小</strong></p> <p>可以通过这样的方式定义字符串的大小，例如这个字符数组，它的大小为10字节</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> line<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>注意</strong>：hello是5个字符，但实际上占了6字节，因为编译器会自动在结尾生成一个0，标志字符串的结束</p> <h2 id="字符串赋值"><a href="#字符串赋值" class="header-anchor">#</a> 字符串赋值</h2> <p>先定义一个指针<code>t</code>指向字符串<code>abc</code>,然后再用指针t赋值给指针s</p> <div class="language-c extra-class"><div class="highlight-lines"><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span>t <span class="token operator">=</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>s<span class="token punctuation">;</span>
+s<span class="token operator">=</span>t<span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;*t=%p\n&quot;</span><span class="token punctuation">,</span> t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;*s=%p\n&quot;</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;t=%c\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">*</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;s=%c\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">*</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>输出结果:</p> <div class="language- extra-class"><pre class="language-text"><code>*t=0000000000404000
+*s=0000000000404000
+t=a
+s=a
+</code></pre></div><p>赋值后并没有产生新的字符串，而是使<code>s</code>指向了<code>t</code>所指的地址（它们指向了同一个地址），通过指向相同地址的方式实现了字符串的赋值</p> <p>在这个示例中，输出的并不是字符串<code>abc</code>而是字符串中的第一个字符<code>a</code>.这是因为<a href="/c/指针.html#指针与数组">*s相当于s[0]</a>，它们表示的都是字符数组的第一个单元</p> <h2 id="字符串的输入输出"><a href="#字符串的输入输出" class="header-anchor">#</a> 字符串的输入输出</h2> <ul><li>通过<code>scanf</code>和<code>printf</code>输入输出整个字符串时，需要使用占位符<code>%s</code>，而不是<code>%c</code></li> <li><code>%c</code>只能输出字符数组中第一个数组单元的字符，<code>%s</code>可以输出整个整个字符数组中的所有字符</li></ul> <p><strong>字符串输入</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>字符串输出</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输入字符串时不能包含空格，<code>scanf</code>读到空格就会就会结束当前字符串的读取，如果之后还有字符串要读，就会开始读取下一个字符串的，如果没有，空格后的内容不会被读到</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> string2<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%s%s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">,</span> string2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s %s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">,</span>string2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; 1 2 3
+1 2
+</code></pre></div><p>输入1 2 3 ，输出1 2 ，每个字符串间用空格隔开，因为这里scanf只读取两个字符串，所以这里输入的3不会被读到</p> <p><strong>scanf安全问题：</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在这样一个程序中，字符数组中只能容纳10个字符，但在scanf中可以无限输入任意数量的字符，如果输入的字符数量超过字符数组的容纳范围就会出错，为了解决这个问题，可以通过占位符去限制输入字符的数量，例如：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%7s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>在占位符<code>%s</code>中添加数字，表示<strong>最多</strong>读取字符的数量。例如<code>%7s</code>，表示<strong>最多</strong>读取7个字符(小于等于7)</li></ul> <p><strong>演示</strong>：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%7s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输入：</p> <div class="language- extra-class"><pre class="language-text"><code>12345678
+</code></pre></div><p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>1234567
+</code></pre></div><ul><li>如果输入的字符超过了输入限制，就会把多余的字符输入到下一个字符串中</li></ul> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> string2<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%7s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%7s&quot;</span><span class="token punctuation">,</span> string2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s %s&quot;</span><span class="token punctuation">,</span> string<span class="token punctuation">,</span>string2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输入：</p> <div class="language- extra-class"><pre class="language-text"><code>12345678
+</code></pre></div><p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>1234567 8
+</code></pre></div><p>总共输入了8个字符，但<code>scanf</code>限制只能输入7个字符，所以前7个字符放在了字符数组<code>string</code>中，剩下的字符放在了紧跟其后的字符数组<code>string2</code>中</p> <h3 id="putchar"><a href="#putchar" class="header-anchor">#</a> putchar</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">putchar</span><span class="token punctuation">(</span><span class="token keyword">int</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>在标准输出中写入一个字符</li> <li>返回写入的字符数量，返回类型是<code>int</code></li> <li>如果失败就会返回EOF(-1)表示文件结束</li></ul> <h3 id="getchar"><a href="#getchar" class="header-anchor">#</a> getchar</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">getchar</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>从标准输出中读入一个字符</li> <li>返回读到都字符，返回类型是<code>int</code></li></ul> <hr> <p><strong>示例</strong>：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> a<span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>a <span class="token operator">=</span> <span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token constant">EOF</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token function">putchar</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个程序中，输入什么内容，程序就会输出什么内容，这是因为，在键盘中输入的内容会在shell中进行<strong>行编辑</strong>，在按下回车前，这些内容都在shell中，并没有交给程序，当按下回车后，<code>getchar</code>会一个字符一个字符的读入并且<code>putchar</code>会一个个字符一个字符的写入</p> <p>使用快捷键Ctrl+C，程序终止；使用Ctrl+Z(在unix中用Ctrl+D)，程序结束</p> <h2 id="字符串函数"><a href="#字符串函数" class="header-anchor">#</a> 字符串函数</h2> <p>使用字符串函数时需要引入标准库<code>string.h</code></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+</code></pre></div><h3 id="strlen"><a href="#strlen" class="header-anchor">#</a> strlen</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token class-name">size_t</span> <span class="token function">strlen</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>函数中的字符串是常量，不能修改</li> <li>计算字符串长度时不包括空字符<code>\0</code></li> <li><code>size_t</code>表示无符号整数类型</li></ul> <p><strong>返回值</strong></p> <p>该函数返回字符串的长度</p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%lu\n&quot;</span><span class="token punctuation">,</span> <span class="token function">strlen</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="strcmp"><a href="#strcmp" class="header-anchor">#</a> strcmp</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">strcmp</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>s1<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>s2<span class="token punctuation">)</span>
+</code></pre></div><ul><li>这个函数用于字符串的比较</li> <li>函数中的字符串是常量，不能修改</li> <li>两个字符串按照<a href="/c/参考.html#ascii码"><strong>ASCII值</strong></a>大小自左向右<strong>逐个</strong>字符比较，<strong>直到出现不同的字符或遇见<code>\0</code>为止</strong></li></ul> <p><strong>返回值</strong></p> <ul><li>返回值小于 0，则表示 str1 小于 str2。</li> <li>返回值大于 0，则表示 str1 大于 str2。</li> <li>返回值等于 0，则表示 str1 等于 str2。</li></ul> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> str1<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> str2<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> <span class="token function">strcmp</span><span class="token punctuation">(</span>str1<span class="token punctuation">,</span> str2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="strncmp"><a href="#strncmp" class="header-anchor">#</a> strncmp</h3> <p><code>strncmp</code>函数在<code>strcmp</code>函数的基础上增加了对于比较数量的控制</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">strncmp</span><span class="token punctuation">(</span>str1<span class="token punctuation">,</span> str2<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>函数参数表中的4表示最多比较前4个字符</p> <h3 id="strcpy"><a href="#strcpy" class="header-anchor">#</a> strcpy</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span><span class="token function">strcpy</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>dest<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>src<span class="token punctuation">)</span>
+</code></pre></div><ul><li>该函数可以把<code>src</code>中的字符串拷贝到<code>dest</code>指向的空间中</li> <li>但<code>src</code>和<code>dest</code>在内存中不能重叠</li></ul> <p><strong>参数</strong></p> <ul><li><code>dest</code> : 指向用于存储复制内容的目标数组</li> <li><code>src</code> : 要复制的字符串</li></ul> <p><strong>返回值</strong></p> <p>该函数返回一个指向<code>dest</code>字符串的指针</p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> str1<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> str2<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">strcpy</span><span class="token punctuation">(</span>str2<span class="token punctuation">,</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> str2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>abc
+</code></pre></div><p>还可以直接通过strcpy函数修改字符串</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">strcpy</span> <span class="token punctuation">(</span>str<span class="token punctuation">,</span><span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="strncpy"><a href="#strncpy" class="header-anchor">#</a> strncpy</h3> <p><code>strncpy</code>函数在<code>strcpy</code>函数的基础上，增加了对于字符复制数量的控制</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">strncpy</span><span class="token punctuation">(</span>str2<span class="token punctuation">,</span> str1<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>函数参数表中的10表示最多复制10个字符，如果要复制的字符数不满足10个时，剩余的空间用空字节填充</p> <h3 id="strcat"><a href="#strcat" class="header-anchor">#</a> strcat</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span><span class="token function">strcat</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>str1<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>str2<span class="token punctuation">)</span>
+</code></pre></div><ul><li>该函数可以把字符串<code>str2</code>追加到字符串<code>str1</code>的后面，组成<strong>一个字符串</strong></li> <li>但<code>str1</code>必须有足够的空间</li></ul> <p><strong>返回值</strong></p> <p>该函数返回一个指向字符串<code>s1</code>的指针</p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> str1<span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> str2<span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">&quot;def&quot;</span><span class="token punctuation">;</span>
+   
+<span class="token function">strcat</span><span class="token punctuation">(</span>str1<span class="token punctuation">,</span>str2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>abcdef
+</code></pre></div><h3 id="strncat"><a href="#strncat" class="header-anchor">#</a> strncat</h3> <p><code>strncat</code>在<code>strcat</code>的基础上增加了对于追加字符数量的限制</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">strncat</span><span class="token punctuation">(</span>str1<span class="token punctuation">,</span> str2<span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>函数参数表中的15表示最多追加15个字符</p> <h3 id="strchr"><a href="#strchr" class="header-anchor">#</a> strchr</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span><span class="token function">strchr</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>str<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span>
+</code></pre></div><p><strong>参数</strong></p> <ul><li><code>str</code> ：要被检索的字符串</li> <li><code>c</code> ：在字符串<strong>str</strong>中寻找的字符</li></ul> <p><strong>返回值</strong></p> <p>在字符串<code>str</code>中<strong>从左向右</strong>寻找字符<code>c</code>第一次出现的位置，并返回这个位置的指针(内存地址)，如果未找到该字符则返回<code>NULL</code></p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">const</span> <span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token char">'w'</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>ret<span class="token punctuation">;</span>
+
+ret <span class="token operator">=</span> <span class="token function">strchr</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%c\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>w
+world
+</code></pre></div><p>如果要寻找字符串中字符<code>c</code>第二次出现的位置，可以再使用一次<code>strchr</code></p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br></div><pre class="language-c"><code><span class="token keyword">const</span> <span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token char">'l'</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>ret<span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>p<span class="token punctuation">;</span>
+
+ret <span class="token operator">=</span> <span class="token function">strchr</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+p <span class="token operator">=</span> <span class="token function">strchr</span><span class="token punctuation">(</span>ret<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token char">'l'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果</p> <div class="language- extra-class"><pre class="language-text"><code>lo,world
+</code></pre></div><h3 id="strrchr"><a href="#strrchr" class="header-anchor">#</a> strrchr</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span><span class="token function">strrchr</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>str<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span>
+</code></pre></div><p>在字符串<code>str</code>中搜索最后一次出现字符<code>c</code>的位置</p> <p><strong>参数</strong></p> <ul><li><code>str</code> ：要被检索的字符串</li> <li><code>c</code> ：在字符串<strong>str</strong>中寻找的字符</li></ul> <p><strong>返回值</strong></p> <p>在字符串<code>str</code>中<strong>从左向右</strong>寻找字符<code>c</code>最后一次出现的位置，并返回这个位置的指针(内存地址)，如果未找到该字符则返回<code>NULL</code></p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">const</span> <span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token char">'l'</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>ret<span class="token punctuation">;</span>
+
+ret <span class="token operator">=</span> <span class="token function">strrchr</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%c\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>l
+ld
+</code></pre></div><h3 id="strstr"><a href="#strstr" class="header-anchor">#</a> strstr</h3> <p><strong>函数声明</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">char</span> <span class="token operator">*</span><span class="token function">strstr</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>string<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>str<span class="token punctuation">)</span>
+</code></pre></div><p><strong>参数</strong></p> <p><code>string</code> 被检索的字符串
+<code>str</code> 在字符串<strong>trisng</strong>中寻找的字符串</p> <p><strong>返回值</strong></p> <p>该函数返回在<code>string</code>中第一次出现字符串<code>str</code>的指针，如果未找到字符串<code>str</code>则返回null</p> <p><strong>使用示例</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">const</span> <span class="token keyword">char</span> string<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;world&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>ret<span class="token punctuation">;</span>
+
+ret <span class="token operator">=</span> <span class="token function">strstr</span><span class="token punctuation">(</span>string<span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果:</p> <div class="language- extra-class"><pre class="language-text"><code>world
+</code></pre></div><h3 id="strcasestr"><a href="#strcasestr" class="header-anchor">#</a> strcasestr</h3> <p>函数<code>strcasestr</code>和函数<code>strstr</code>基本相同，区别在于<code>strcasestr</code>在寻找的字符串时不区分字母大小写</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c/指针.html" class="prev">
+        指针
+      </a></span> <span class="next"><a href="/c/枚举.html">
+        枚举
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.3a179c08.js" defer></script><script src="/assets/js/2.9ce38e7a.js" defer></script><script src="/assets/js/20.4f31f3de.js" defer></script><script src="/assets/js/3.a3de281d.js" defer></script>
+  </body>
+</html>

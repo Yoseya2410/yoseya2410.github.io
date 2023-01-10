@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>输入与输出 | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/notes.png">
+    <meta name="description" content="这里汇集了我在自然科学,计算机,信息技术,电子技术等领域学到的知识">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="keywords" content="数学,物理,计算机,电子,互联网,信息,知识,笔记,釉色鸭,yoseya,博客,blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc3511f1.css" as="style"><link rel="preload" href="/assets/js/app.3a179c08.js" as="script"><link rel="preload" href="/assets/js/2.9ce38e7a.js" as="script"><link rel="preload" href="/assets/js/35.5736c874.js" as="script"><link rel="preload" href="/assets/js/3.a3de281d.js" as="script"><link rel="prefetch" href="/assets/js/10.29cfd664.js"><link rel="prefetch" href="/assets/js/11.6af3e845.js"><link rel="prefetch" href="/assets/js/12.fc606c1f.js"><link rel="prefetch" href="/assets/js/13.da6f7b9d.js"><link rel="prefetch" href="/assets/js/14.51f6614a.js"><link rel="prefetch" href="/assets/js/15.cebed5bc.js"><link rel="prefetch" href="/assets/js/16.1698229b.js"><link rel="prefetch" href="/assets/js/17.6850c45b.js"><link rel="prefetch" href="/assets/js/18.e7de597b.js"><link rel="prefetch" href="/assets/js/19.de8b97d5.js"><link rel="prefetch" href="/assets/js/20.4f31f3de.js"><link rel="prefetch" href="/assets/js/21.05908e5b.js"><link rel="prefetch" href="/assets/js/22.d6e87ed0.js"><link rel="prefetch" href="/assets/js/23.d45da811.js"><link rel="prefetch" href="/assets/js/24.17f7c0e2.js"><link rel="prefetch" href="/assets/js/25.145ff0ad.js"><link rel="prefetch" href="/assets/js/26.48f0e90d.js"><link rel="prefetch" href="/assets/js/27.0f997655.js"><link rel="prefetch" href="/assets/js/28.5995860d.js"><link rel="prefetch" href="/assets/js/29.103f152e.js"><link rel="prefetch" href="/assets/js/30.6ed053ad.js"><link rel="prefetch" href="/assets/js/31.9765a601.js"><link rel="prefetch" href="/assets/js/32.f0ea1dda.js"><link rel="prefetch" href="/assets/js/33.2d5858ee.js"><link rel="prefetch" href="/assets/js/34.3fa46443.js"><link rel="prefetch" href="/assets/js/36.673acdbd.js"><link rel="prefetch" href="/assets/js/37.8eb67722.js"><link rel="prefetch" href="/assets/js/38.43eaf514.js"><link rel="prefetch" href="/assets/js/39.bba3b7db.js"><link rel="prefetch" href="/assets/js/4.bea149a6.js"><link rel="prefetch" href="/assets/js/40.c36e887d.js"><link rel="prefetch" href="/assets/js/41.8f00702e.js"><link rel="prefetch" href="/assets/js/42.a4e55caf.js"><link rel="prefetch" href="/assets/js/43.71db9a0b.js"><link rel="prefetch" href="/assets/js/44.86191c7c.js"><link rel="prefetch" href="/assets/js/45.5fce8d08.js"><link rel="prefetch" href="/assets/js/46.d8689b11.js"><link rel="prefetch" href="/assets/js/47.32fb444c.js"><link rel="prefetch" href="/assets/js/48.fd9456ea.js"><link rel="prefetch" href="/assets/js/49.05a125bc.js"><link rel="prefetch" href="/assets/js/5.414d2eb4.js"><link rel="prefetch" href="/assets/js/50.68ec5a64.js"><link rel="prefetch" href="/assets/js/51.e6427b49.js"><link rel="prefetch" href="/assets/js/52.8340a0a8.js"><link rel="prefetch" href="/assets/js/53.8286254b.js"><link rel="prefetch" href="/assets/js/6.4732b70d.js"><link rel="prefetch" href="/assets/js/7.525e8cc4.js"><link rel="prefetch" href="/assets/js/8.05c8882d.js"><link rel="prefetch" href="/assets/js/9.c2d945ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc3511f1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基本
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/网页基本格式.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/css/语法.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/javascript/JavaScript的使用.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/typescript/安装TypeScript.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/javascript/pwa.html" class="nav-link">
+  PWA
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javascript/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/c/Hello world.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/计算机组成原理/基本结构.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/计算机网络/" class="nav-link">
+  计算机网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/linux/安装程序.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/HarmonyOS/" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/shell/" class="nav-link">
+  Shell
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子技术" class="dropdown-title"><span class="title">电子技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子技术" class="mobile-dropdown-title"><span class="title">电子技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/模拟电路/" class="nav-link">
+  模拟电路
+</a></li><li class="dropdown-subitem"><a href="/数字电路/" class="nav-link">
+  数字电路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/半导体/" class="nav-link">
+  半导体
+</a></li><li class="dropdown-subitem"><a href="/单片机/" class="nav-link">
+  单片机
+</a></li><li class="dropdown-subitem"><a href="/嵌入式/" class="nav-link">
+  嵌入式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="自然科学" class="dropdown-title"><span class="title">自然科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="自然科学" class="mobile-dropdown-title"><span class="title">自然科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  微积分
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/math/" class="nav-link">
+  概率统计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  普通物理
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  四大力学
+</a></li><li class="dropdown-subitem"><a href="/physics/" class="nav-link">
+  星际航行
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/svg.html" class="nav-link">
+  SVG
+</a></li><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></li><li class="dropdown-item"><h4>
+          跳转
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚇开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c/Hello world.html" class="sidebar-link">Hello world!</a></li><li><a href="/c/输入与输出.html" class="active sidebar-link">输入与输出</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c/输入与输出.html#输出整数" class="sidebar-link">输出整数</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#输出浮点型数据" class="sidebar-link">输出浮点型数据</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#scanf-输入" class="sidebar-link">scanf 输入</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#整数的格式化输出" class="sidebar-link">整数的格式化输出</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#输入其他进制" class="sidebar-link">输入其他进制</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#格式化输入输出" class="sidebar-link">格式化输入输出</a></li><li class="sidebar-sub-header"><a href="/c/输入与输出.html#printf和scanf的返回值" class="sidebar-link">printf和scanf的返回值</a></li></ul></li><li><a href="/c/变量.html" class="sidebar-link">变量</a></li><li><a href="/c/常量.html" class="sidebar-link">常量</a></li><li><a href="/c/数据类型.html" class="sidebar-link">数据类型</a></li><li><a href="/c/运算.html" class="sidebar-link">运算</a></li><li><a href="/c/判断.html" class="sidebar-link">判断</a></li><li><a href="/c/循环.html" class="sidebar-link">循环</a></li><li><a href="/c/控制循环语句.html" class="sidebar-link">循环控制语句</a></li><li><a href="/c/逃逸字符.html" class="sidebar-link">逃逸字符</a></li><li><a href="/c/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/c/逻辑运算.html" class="sidebar-link">逻辑运算</a></li><li><a href="/c/条件表达式.html" class="sidebar-link">条件表达式</a></li><li><a href="/c/函数.html" class="sidebar-link">函数</a></li><li><a href="/c/数组.html" class="sidebar-link">数组</a></li><li><a href="/c/指针.html" class="sidebar-link">指针</a></li><li><a href="/c/字符串.html" class="sidebar-link">字符串</a></li><li><a href="/c/枚举.html" class="sidebar-link">枚举</a></li><li><a href="/c/结构.html" class="sidebar-link">结构</a></li><li><a href="/c/全局变量.html" class="sidebar-link">全局变量</a></li><li><a href="/c/编译预处理.html" class="sidebar-link">编译预处理</a></li><li><a href="/c/程序结构.html" class="sidebar-link">程序结构</a></li><li><a href="/c/文件.html" class="sidebar-link">文件</a></li><li><a href="/c/位运算.html" class="sidebar-link">位运算</a></li><li><a href="/c/实例.html" class="sidebar-link">实例</a></li><li><a href="/c/参考.html" class="sidebar-link">参考</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="输入与输出"><a href="#输入与输出" class="header-anchor">#</a> 输入与输出</h1> <h2 id="输出整数"><a href="#输出整数" class="header-anchor">#</a> 输出整数</h2> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>%d表示输出后面的整数，例如运行以上代码输出：</p> <div class="language- extra-class"><pre class="language-text"><code>12
+</code></pre></div><p>我们还可以在<code>printf()</code>里做运算，例如</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>运行后，输出：</p> <div class="language- extra-class"><pre class="language-text"><code>3
+</code></pre></div><h2 id="输出浮点型数据"><a href="#输出浮点型数据" class="header-anchor">#</a> 输出浮点型数据</h2> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%f&quot;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token operator">+</span><span class="token number">2.1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这里我们使<code>printf()</code>输出的数据为浮点数，运行后输出：</p> <div class="language- extra-class"><pre class="language-text"><code>3.100000
+</code></pre></div><p>注意：输入不同类型的数据时要先说明数据类型，例如整数就要说明是<code>%d</code>浮点数就要说明是<code>%f</code> ，如果输出的数据与说明的数据类型不一致，例如要输出小数1.2，但数据类型是<code>%d</code>时，输出的内容就不会是浮点数，而是一个与此无关错误数字，来表示出错了。</p> <h2 id="scanf-输入"><a href="#scanf-输入" class="header-anchor">#</a> scanf 输入</h2> <p>如果你需要在程序中输入内容，那你就要用到<code>scanf()</code>函数</p> <p>运行下面这个程序，如果我们通过<code>scanf()</code>函数向程序里输入2，那么程序就会通过<code>printf()</code>函数输出运算后的结果3</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//初始化a，这是必要的</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">+</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>注意：在<code>scanf()</code>函数中要读取的数据前一定要加<code>&amp;</code> 例如 <code>scanf(&quot;%d&quot;, &amp;price);</code></p> <p>再看下面这段程序</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>首先这是一个正确的程序，第一个占位符<code>%d</code>对应<code>a</code> 第二个<code>%d</code>对应<code>b</code> ，这样我们就可以在程序中输入两个值，例如“1 2”这样用空格把两个值分开后输入</p> <p>我们还可以先输入一个值，回车确认，再输入一个值，回车确认。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d &quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果在<code>scanf()</code>的最后一个占位符%d后多加一个空格，那么当你输入两个值后，按下回车，程序并没有结束，计算机还在等待你输入那个空格的，这时候你需要再输入任意一个字符来填补空格的位置，程序才能结束运行，由于之前已经把两个值都输入了，所以至于空格的位置输入什么都不会影响输出的结果</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d, %d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果我们像这样<code>scanf(&quot;%d, %d&quot;, &amp;a, &amp;b);</code>在两个占位符<code>%d</code>中间加一个<code>,</code> 那么当输入“3 4”时输出的却是”3 1“因为<code>,</code> 导致了程序错误，只能输入第一个值，因为它没被影响，但<code>,</code>后面的第二个值不能正常的输入，因为程序中代码<code>int b = 1;</code> 给b赋值为1，所以默认输出初始值1</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;abcd%d %d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果在<code>scanf()</code>函数中加入一些其他的字符，例如<code>abcd</code> 那么在输入的时候也要在按照相同的顺序加入字符<code>abcd</code> 。如果输入”abcd 3 4“ 终端如下：</p> <div class="language- extra-class"><pre class="language-text"><code>abcd 3 4
+3 4
+PS D:\C&gt;
+</code></pre></div><p>正常运行</p> <p>如果不输入<code>abcd</code> 直接输入“2 3”则终端如下：</p> <div class="language- extra-class"><pre class="language-text"><code>2 3
+0 1
+PS D:\C&gt;
+</code></pre></div><p>这时输出的不是“2 3”而是“0 1”这是因为这里出现了错误，在<code>scanf()</code>函数中我们输入的内容必须是函数中存在的所有内容，例如在<code>scanf(&quot;abcd%d %d&quot;, &amp;a, &amp;b);</code> 中 我们输入的内容除了两个占位符<code>%d</code>所对应的a和b外，还要有<code>abcd</code> 这些其他的字符程序才能正确运行，而且必须按照顺序排列，这样才能对应字符，输入<code>abcd 2 3</code>可以，输入<code>2 3 abcd</code>不行</p> <h2 id="整数的格式化输出"><a href="#整数的格式化输出" class="header-anchor">#</a> 整数的格式化输出</h2> <p>占位符以及其对应的数据类型：</p> <table><thead><tr><th>占位符</th> <th>数据类型</th></tr></thead> <tbody><tr><td>%d</td> <td>int</td></tr> <tr><td>%u</td> <td>unsigned</td></tr> <tr><td>%ld</td> <td>long long</td></tr> <tr><td>%lu</td> <td>unsigned long long</td></tr></tbody></table> <p>看一下这一段代码</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;c=%u i=%u\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>按之前的经验，运行后输出的应该也是-1，但实际上输出的却是</p> <div class="language- extra-class"><pre class="language-text"><code>c=4294967295 i=4294967295
+</code></pre></div><p>为什么会这样呢？因为我们输出使用的是%u，所以值以unsigned类型输出在unsigned范围里没有-1，所有就像之前所讲的那样他会输出unsigned范围内最大的值4294967295</p> <p>再试一试这个代码</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">300</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">300</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;c=%u i=%u\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出的值为：</p> <div class="language- extra-class"><pre class="language-text"><code>c=4294967252 i=4294966996
+</code></pre></div><p>同样输入的是-300，为什么输出的值不同呢？那是因为我们在初始化的时候输入的值<strong>c</strong>和<strong>i</strong>的数据类型不同i的数据类型是<code>int</code>，值的范围是2147483648 ~ 2147483647，c的数据类型是<code>char</code>范围是-128 ~ 127，-300并不在这个范围内</p> <p>**首先，这样超出数据类型范围的程序是错误的，**但如果超过了这个范围也能输出，但并不是乱输出，而是有一定规律的输出，但输出的方式会很奇怪（不重要）</p> <h2 id="输入其他进制"><a href="#输入其他进制" class="header-anchor">#</a> 输入其他进制</h2> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token number">012</span><span class="token punctuation">;</span> <span class="token comment">//八进制</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0x12</span><span class="token punctuation">;</span> <span class="token comment">//十六进制</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;c=%u i=%u\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>c=10 i=18
+</code></pre></div><p>我们在输入其他进制的值时在C语言中计算机会自动转化为十进制输出，例如八进制的012输出为10，十六进制的0x12输出为18</p> <h3 id="如果想要输出其他进制的值怎么办"><a href="#如果想要输出其他进制的值怎么办" class="header-anchor">#</a> 如果想要输出其他进制的值怎么办？</h3> <table><thead><tr><th>占位符</th> <th>数据类型</th></tr></thead> <tbody><tr><td>%o</td> <td>八进制整数</td></tr> <tr><td>%x</td> <td>十六进制整数</td></tr></tbody></table> <p>我们可以使用这样的占位符来改变输出的数据类型，例如这些代码</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token number">012</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0x12</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;c=%o i=%x\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>运行后，输出：</p> <div class="language-c extra-class"><pre class="language-c"><code>c<span class="token operator">=</span><span class="token number">12</span> i<span class="token operator">=</span><span class="token number">12</span>
+</code></pre></div><p>这里并不会显示其他进制的值前的那些符号例如八进制的0和十六进制的0x</p> <p>如果代码是这样</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0x1A</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;c=%o i=%x\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>i=1a
+</code></pre></div><p>这里输出的a为小写，因为%x是小写的x，如果改为大写的%X则会输出</p> <div class="language- extra-class"><pre class="language-text"><code>i=1A
+</code></pre></div><ul><li>这里的8进制和16进制只是把数字表达为字符串与计算机内部如何表达数学无关</li></ul> <h2 id="格式化输入输出"><a href="#格式化输入输出" class="header-anchor">#</a> 格式化输入输出</h2> <h3 id="printf"><a href="#printf" class="header-anchor">#</a> printf</h3> <div class="language-c extra-class"><pre class="language-c"><code><span class="token operator">%</span><span class="token punctuation">[</span>flags<span class="token punctuation">]</span><span class="token punctuation">[</span>width<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">.</span>prec<span class="token punctuation">]</span><span class="token punctuation">[</span>length<span class="token punctuation">]</span>type
+</code></pre></div><ul><li>length表示<a href="/c/文件.html#类型修饰符">类型修饰符</a></li> <li>type是<a href="/c/参考.html#c占位符">占位符</a>的类型</li></ul> <table><thead><tr><th>flag</th> <th>含义</th> <th>width/prec</th> <th>含义</th></tr></thead> <tbody><tr><td><code>-</code></td> <td>左对齐</td> <td>number</td> <td>输出的最小字符数</td></tr> <tr><td><code>+</code></td> <td>在字符前添加<code>+</code></td> <td><code>*</code></td> <td>取第一个参数为输出的最小字符数</td></tr> <tr><td>(空格)</td> <td>如果是正数在值前加一个空格</td> <td>.number</td> <td>取小数点后几位</td></tr> <tr><td><code>0</code></td> <td>用0填充空位</td> <td><code>.*</code></td> <td>取第一个参数为取小数点后的位数</td></tr></tbody></table> <p><strong>左对齐</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%9d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%-9d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>      123
+123
+</code></pre></div><p><code>%9d</code>表示数据输出占9个字符的空间，但是这是靠右对齐的，所以空格在字符的前面，如果再加上<code>-</code>，就会变成向左对齐的，空格就不在字符前面了</p> <p><strong>在输出值前显示<code>+</code></strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>-123
+123
+</code></pre></div><p>使用<code>%d</code>输出时可以输出负号，但没办法输出<code>+</code>，这时就要使用<code>%+d</code></p> <blockquote><div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%+d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%+d\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>+123
++123
+</code></pre></div></blockquote> <p>不论字符前是否有<code>+</code>，输出后都会在字符前添加<code>+</code></p> <hr> <ul><li>也可以输出负号</li></ul> <blockquote><div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%+d\n&quot;</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>-123
+</code></pre></div></blockquote> <ul><li>这些符号也可以混合使用</li></ul> <blockquote><div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%+-9d\n&quot;</span><span class="token punctuation">,</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>+123
+</code></pre></div></blockquote> <p><strong>在正数前留空</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;% d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code> 123
+</code></pre></div><p>在输出的整数前留下一个空格</p> <p><strong>用0填充空格</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%09d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>000000123
+</code></pre></div><p>总共输出了9个字符，除了有效字符外剩余的位置用0填充</p> <p><strong>注意</strong>：占位符中0要在9前面，如果写在后面则表示的是输出占90个字符空间</p> <p><strong>取小数点后几位</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%.2f\n&quot;</span><span class="token punctuation">,</span> <span class="token number">12.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>%.2f</code>表示取小数点后2位</p> <p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>12.30
+</code></pre></div><ul><li>如果输出值的小数点位数超出了占位符所设定的位数时，会采取四舍五入的方式</li></ul> <p><strong>自定义取小数点后几位</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%.*f\n&quot;</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> <span class="token number">12.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输入3，输出结果为</p> <div class="language- extra-class"><pre class="language-text"><code>12.300
+</code></pre></div><p>占位符中的<code>*</code>表示把第一个参数填充到<code>*</code>的位置，这里的第一个参数是变量<code>i</code>，输入3后变量<code>i</code>的值就为3，然后把变量<code>i</code>填充到<code>*</code>的位置，占位符为<code>%.3f</code>，表示取小数点后三位</p> <h4 id="类型修饰符"><a href="#类型修饰符" class="header-anchor">#</a> 类型修饰符</h4> <table><thead><tr><th>类型修饰符</th> <th>含义</th></tr></thead> <tbody><tr><td><code>hh</code></td> <td>单个字节</td></tr> <tr><td><code>h</code></td> <td>short</td></tr> <tr><td><code>l</code></td> <td>long</td></tr> <tr><td><code>ll</code></td> <td>long long</td></tr> <tr><td><code>L</code></td> <td>long double</td></tr></tbody></table> <h3 id="scanf"><a href="#scanf" class="header-anchor">#</a> scanf</h3> <div class="language-c extra-class"><pre class="language-c"><code><span class="token operator">%</span><span class="token punctuation">[</span>flag<span class="token punctuation">]</span>type
+</code></pre></div><ul><li>type是<a href="/c/参考.html#c占位符">占位符</a>的类型</li></ul> <table><thead><tr><th>flag</th> <th>含义</th></tr></thead> <tbody><tr><td><code>*</code></td> <td>跳过</td></tr> <tr><td>number</td> <td>最大字符数</td></tr> <tr><td><code>hh</code></td> <td>char</td></tr> <tr><td><code>h</code></td> <td>short</td></tr> <tr><td><code>l</code></td> <td>long或double</td></tr> <tr><td><code>ll</code></td> <td>long long</td></tr> <tr><td><code>L</code></td> <td>long double</td></tr></tbody></table> <p><strong>跳过</strong></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> num<span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d%d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>输入了两次，分别为1和2，输出结果为</p> <div class="language- extra-class"><pre class="language-text"><code>2
+</code></pre></div><p>跳过了第一次输入的值，输出了第二次输入的值</p> <h3 id=""><a href="#" class="header-anchor">#</a> <code>[...]</code></h3> <div class="language- extra-class"><pre class="language-text"><code>$GPRMC,080655.00,A,4546.40891,N,12639.65641,E,1.045,328.42,170809,,,A*60
+</code></pre></div><p>这是一个GPS模块产生的数据，我们要处理这个数据就要使用<code>[...]</code></p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%*[^,】,%【^,】,%【^,】,%【^,】,%【^,】,%【^,】,%【^,】,%【^,】,%【^,】,%【^,】&quot;</span><span class="token punctuation">,</span> sTime<span class="token punctuation">,</span>sAV<span class="token punctuation">,</span>sLati<span class="token punctuation">,</span><span class="token operator">&amp;</span>sNW<span class="token punctuation">,</span>sLong<span class="token punctuation">,</span><span class="token operator">&amp;</span>sEW<span class="token punctuation">,</span>sSpeed<span class="token punctuation">,</span>sAngle<span class="token punctuation">,</span>sDate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>%[^,]表示在<code>,</code>之前的内容，%*[^,]表示跳过<code>,</code>之前的内容</p> <h2 id="printf和scanf的返回值"><a href="#printf和scanf的返回值" class="header-anchor">#</a> printf和scanf的返回值</h2> <ul><li>printf和scanf都有返回值</li> <li>scanf返回读取变量的个数</li> <li>printf返回输出的字符数量</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c/Hello world.html" class="prev">
+        Hello world!
+      </a></span> <span class="next"><a href="/c/变量.html">
+        变量
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.3a179c08.js" defer></script><script src="/assets/js/2.9ce38e7a.js" defer></script><script src="/assets/js/35.5736c874.js" defer></script><script src="/assets/js/3.a3de281d.js" defer></script>
+  </body>
+</html>
