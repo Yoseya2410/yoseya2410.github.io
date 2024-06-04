@@ -1,0 +1,1 @@
+# yoseya2410.github.io
