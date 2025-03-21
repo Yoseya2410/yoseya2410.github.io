@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--This page is from Evan You-->
+<html lang="en">
+
+<head>
+  <title>Yoseya</title>
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 5vh 10vw;
+      color: #121314;
+    }
+
+    h1 {
+      font-size: 4.5em;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 2.2em
+    }
+
+    p {
+      font-size: 1.6em;
+      font-weight: 300;
+      line-height: 1.4;
+      max-width: 27em;
+    }
+
+    a {
+      text-decoration: none;
+      white-space: nowrap;
+      color: #121314;
+      position: relative;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+      transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      background-color: rgba(79, 192, 141, 0.5);
+    }
+
+    a:hover:after {
+      top: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="en">
+    <h1>Hello.</h1>
+    <h2>My name is Yoseya.</h2>
+    <p>
+      <font>
+        I am an independent developer.<br>
+        At present, I mainly study physics and computer science.<br>
+        I am interested in Quantum information, Particle physics as well as Artificial general intelligence.
+        I will share what I learned on my </font><a href="https://yoseya2410.github.io/">notes</a>
+      <font>.Most of my projects are open source,
+        You can see them on my </font><a href="https://github.com/Yoseya2410">GitHub</a>
+      <font>,Or preview or view their details in my </font><a href="https://yoseya2410.github.io/docs/">idea
+        workshop</a>
+      <font>.</font>
+    </p>
+    <p>
+      <font>I'm from China. My Chinese name is 张新旺(zhāng xīn wàng).
+        I need more like-minded partners. If you are also interested in physics or computer field, you can contact me
+        via </font><a href="mailto:yoseya2410@outlook.com">email</a>. I think we may become good friends.
+    </p>
+  </div>
+
+  <div id="zh">
+    <h1>你好</h1>
+    <h2>My name is Yoseya.</h2>
+    <p>
+      <font>
+        我是一名独立开发者。<br>
+        目前，我主要学习物理学与计算机科学，<br>我对量子信息，粒子物理学以及通用人工智能很感兴趣。<br>
+        我会把我所学到的知识分享在我的</font><a href="https://yoseya2410.github.io/">笔记</a><font>中。<br>
+        我的许多项目都是开源的，你可以在我的</font><a href="https://github.com/Yoseya2410">GitHub</a>上看到它们，<font>或者在我的</font><a
+        href="https://yoseya2410.github.io/docs/">创意作坊</a><font>中预览或查看它们的详细信息。</font>
+    </p>
+    <p>
+      <font>我需要更多志同道合的伙伴。<br>如果你也对物理学或计算机感兴趣，<br>可以通过</font><a href="mailto:yoseya2410@outlook.com">电子邮件</a>联系我。<br>也许我们可以成为好朋友。
+    </p>
+  </div>
+  <script>
+    var language = navigator.language;
+    if (language == "zh-CN") {
+      document.getElementById("en").style.display = "none";
+    } else {
+      document.getElementById("zh").style.display = "none";
+    }
+    document.onkeydown = onKeyDown;
+    function onKeyDown() {
+      if (window.event.keyCode == 9) {
+        if (language == "zh-CN") {
+          document.getElementById("zh").style.display = "none";
+          document.getElementById("en").style.display = "inline";
+        }
+      }
+    }
+  </script>
+</body>
+</div>
+
+</html>
