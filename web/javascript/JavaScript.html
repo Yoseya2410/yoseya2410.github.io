@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/logo.png">
+    <script type="text/javascript" src="./js/MicrosoftClarity.js"></script>
+    <meta name="description" content="欢迎来到我的知识库，这里存放着我在自然科学，计算机科学，电子科学等领域所学习到的知识。">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="baidu-site-verification" content="codeva-Tg016Vm0nu">
+    <meta name="msvalidate.01" content="B6576B71940A163919B4737E9A751485">
+    <meta name="google-site-verification" content="fV3hX5ZbIBy6PAxE0dubuOfSgI0nctKRpFwcbcsVB7w">
+    
+    <link rel="preload" href="/assets/css/0.styles.8dd627c7.css" as="style"><link rel="preload" href="/assets/js/app.36db608c.js" as="script"><link rel="preload" href="/assets/js/3.107e051b.js" as="script"><link rel="preload" href="/assets/js/64.834d1892.js" as="script"><link rel="preload" href="/assets/js/5.56dd59ee.js" as="script"><link rel="prefetch" href="/assets/js/10.16039208.js"><link rel="prefetch" href="/assets/js/11.6a7b4b46.js"><link rel="prefetch" href="/assets/js/12.591c58fe.js"><link rel="prefetch" href="/assets/js/13.95767c99.js"><link rel="prefetch" href="/assets/js/14.f2ed1e08.js"><link rel="prefetch" href="/assets/js/15.aec8d557.js"><link rel="prefetch" href="/assets/js/16.96057f0e.js"><link rel="prefetch" href="/assets/js/17.81d161ba.js"><link rel="prefetch" href="/assets/js/18.8337e2c5.js"><link rel="prefetch" href="/assets/js/19.259eae8b.js"><link rel="prefetch" href="/assets/js/20.6464230e.js"><link rel="prefetch" href="/assets/js/21.60735ae1.js"><link rel="prefetch" href="/assets/js/22.cd744946.js"><link rel="prefetch" href="/assets/js/23.f534fef9.js"><link rel="prefetch" href="/assets/js/24.081cb9f5.js"><link rel="prefetch" href="/assets/js/25.c065761a.js"><link rel="prefetch" href="/assets/js/26.bb159e7c.js"><link rel="prefetch" href="/assets/js/27.a7025383.js"><link rel="prefetch" href="/assets/js/28.0cb0e1f7.js"><link rel="prefetch" href="/assets/js/29.86c5fc0f.js"><link rel="prefetch" href="/assets/js/30.7ecaf45c.js"><link rel="prefetch" href="/assets/js/31.2acbd7ea.js"><link rel="prefetch" href="/assets/js/32.9be1fde3.js"><link rel="prefetch" href="/assets/js/33.13bb3d67.js"><link rel="prefetch" href="/assets/js/34.668061e9.js"><link rel="prefetch" href="/assets/js/35.2a7d7988.js"><link rel="prefetch" href="/assets/js/36.112b4f0d.js"><link rel="prefetch" href="/assets/js/37.eb89627c.js"><link rel="prefetch" href="/assets/js/38.4197a304.js"><link rel="prefetch" href="/assets/js/39.d1ca5650.js"><link rel="prefetch" href="/assets/js/4.7cad207b.js"><link rel="prefetch" href="/assets/js/40.42f2e70a.js"><link rel="prefetch" href="/assets/js/41.ae40c14f.js"><link rel="prefetch" href="/assets/js/42.54fe8bbe.js"><link rel="prefetch" href="/assets/js/43.5d504723.js"><link rel="prefetch" href="/assets/js/44.45286d20.js"><link rel="prefetch" href="/assets/js/45.e78ba6d8.js"><link rel="prefetch" href="/assets/js/46.4b3ecd70.js"><link rel="prefetch" href="/assets/js/47.4b6a15d4.js"><link rel="prefetch" href="/assets/js/48.fa4b96f8.js"><link rel="prefetch" href="/assets/js/49.9bb3ed49.js"><link rel="prefetch" href="/assets/js/50.12e7a445.js"><link rel="prefetch" href="/assets/js/51.cfd04b71.js"><link rel="prefetch" href="/assets/js/52.69cb80af.js"><link rel="prefetch" href="/assets/js/53.30a53fd1.js"><link rel="prefetch" href="/assets/js/54.2a223a9f.js"><link rel="prefetch" href="/assets/js/55.e6d9d639.js"><link rel="prefetch" href="/assets/js/56.d94e4501.js"><link rel="prefetch" href="/assets/js/57.ce0c5bed.js"><link rel="prefetch" href="/assets/js/58.9257df6a.js"><link rel="prefetch" href="/assets/js/59.c24929c2.js"><link rel="prefetch" href="/assets/js/6.f83523f4.js"><link rel="prefetch" href="/assets/js/60.b6694efe.js"><link rel="prefetch" href="/assets/js/61.8399cdaa.js"><link rel="prefetch" href="/assets/js/62.d44949e4.js"><link rel="prefetch" href="/assets/js/63.56b177ab.js"><link rel="prefetch" href="/assets/js/65.9c098304.js"><link rel="prefetch" href="/assets/js/66.57a50748.js"><link rel="prefetch" href="/assets/js/67.f71320f3.js"><link rel="prefetch" href="/assets/js/68.7189432b.js"><link rel="prefetch" href="/assets/js/69.817b7108.js"><link rel="prefetch" href="/assets/js/7.db9f625e.js"><link rel="prefetch" href="/assets/js/70.8505d7e7.js"><link rel="prefetch" href="/assets/js/71.b0feea05.js"><link rel="prefetch" href="/assets/js/8.398eb1ea.js"><link rel="prefetch" href="/assets/js/9.c13a85dc.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.b132aabe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8dd627c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="万维网" class="dropdown-title"><span class="title">万维网</span> <span class="arrow down"></span></button> <button type="button" aria-label="万维网" class="mobile-dropdown-title"><span class="title">万维网</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/web/html/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/JavaScript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/nodejs.html" class="nav-link">
+  Node.js
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/WebAssembly.html" class="nav-link">
+  WebAssembly
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/addition/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/c/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/computer/cpp/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/computer/python/python.html" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/离散数学.html" class="nav-link">
+  离散数学
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机组成原理.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/computer/数据结构与算法.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/操作系统.html" class="nav-link">
+  操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/操作系统/Linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/HarmonyOS.html" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/AI/机器学习.html" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-subitem"><a href="/computer/数据库/数据库应用.html" class="nav-link">
+  数据库应用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="物理学" class="dropdown-title"><span class="title">物理学</span> <span class="arrow down"></span></button> <button type="button" aria-label="物理学" class="mobile-dropdown-title"><span class="title">物理学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/力学.html" class="nav-link">
+  力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热学.html" class="nav-link">
+  热学
+</a></li><li class="dropdown-subitem"><a href="/physics/电磁学.html" class="nav-link">
+  电磁学
+</a></li><li class="dropdown-subitem"><a href="/physics/光学.html" class="nav-link">
+  光学
+</a></li><li class="dropdown-subitem"><a href="/physics/原子物理.html" class="nav-link">
+  原子物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/分析力学.html" class="nav-link">
+  经典力学
+</a></li><li class="dropdown-subitem"><a href="/physics/量子力学/量子力学1.html" class="nav-link">
+  量子力学
+</a></li><li class="dropdown-subitem"><a href="/physics/电动力学.html" class="nav-link">
+  电动力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热力学与统计物理/热力学与统计物理1.html" class="nav-link">
+  热力学与统计物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/math/数学分析.html" class="nav-link">
+  数学分析
+</a></li><li class="dropdown-subitem"><a href="/physics/math/线性代数.html" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/physics/math/概率论与数理统计.html" class="nav-link">
+  概率论与数理统计
+</a></li><li class="dropdown-subitem"><a href="/physics/math/数学物理方法.html" class="nav-link">
+  数学物理方法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子信息" class="dropdown-title"><span class="title">电子信息</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子信息" class="mobile-dropdown-title"><span class="title">电子信息</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          电子
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electronics/电路分析.html" class="nav-link">
+  电路分析
+</a></li><li class="dropdown-subitem"><a href="/electronics/模拟电子技术.html" class="nav-link">
+  模拟电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字电子技术.html" class="nav-link">
+  数字电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字信号处理.html" class="nav-link">
+  数字信号处理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通信
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/communication/通信原理.html" class="nav-link">
+  通信原理
+</a></li><li class="dropdown-subitem"><a href="/communication/信号与系统.html" class="nav-link">
+  信号与系统
+</a></li><li class="dropdown-subitem"><a href="/communication/信息论与编码.html" class="nav-link">
+  信息论与编码
+</a></li><li class="dropdown-subitem"><a href="/communication/电磁波与电磁场.html" class="nav-link">
+  电磁波与电磁场
+</a></li><li class="dropdown-subitem"><a href="/communication/微波技术与天线.html" class="nav-link">
+  微波技术与天线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          嵌入式
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/嵌入式/8051.html" class="nav-link">
+  8051单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/STM32.html" class="nav-link">
+  STM32单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/esp32.html" class="nav-link">
+  ESP32单片机
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li></ul></li><li class="dropdown-item"><h4>
+          链接
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/Warehouse/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文件仓库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/docs/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的项目
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/me/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="万维网" class="dropdown-title"><span class="title">万维网</span> <span class="arrow down"></span></button> <button type="button" aria-label="万维网" class="mobile-dropdown-title"><span class="title">万维网</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/web/html/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/JavaScript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/nodejs.html" class="nav-link">
+  Node.js
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/WebAssembly.html" class="nav-link">
+  WebAssembly
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/addition/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/c/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/computer/cpp/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/computer/python/python.html" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/离散数学.html" class="nav-link">
+  离散数学
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机组成原理.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/computer/数据结构与算法.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/操作系统.html" class="nav-link">
+  操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/操作系统/Linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/HarmonyOS.html" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/AI/机器学习.html" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-subitem"><a href="/computer/数据库/数据库应用.html" class="nav-link">
+  数据库应用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="物理学" class="dropdown-title"><span class="title">物理学</span> <span class="arrow down"></span></button> <button type="button" aria-label="物理学" class="mobile-dropdown-title"><span class="title">物理学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/力学.html" class="nav-link">
+  力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热学.html" class="nav-link">
+  热学
+</a></li><li class="dropdown-subitem"><a href="/physics/电磁学.html" class="nav-link">
+  电磁学
+</a></li><li class="dropdown-subitem"><a href="/physics/光学.html" class="nav-link">
+  光学
+</a></li><li class="dropdown-subitem"><a href="/physics/原子物理.html" class="nav-link">
+  原子物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/分析力学.html" class="nav-link">
+  经典力学
+</a></li><li class="dropdown-subitem"><a href="/physics/量子力学/量子力学1.html" class="nav-link">
+  量子力学
+</a></li><li class="dropdown-subitem"><a href="/physics/电动力学.html" class="nav-link">
+  电动力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热力学与统计物理/热力学与统计物理1.html" class="nav-link">
+  热力学与统计物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/math/数学分析.html" class="nav-link">
+  数学分析
+</a></li><li class="dropdown-subitem"><a href="/physics/math/线性代数.html" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/physics/math/概率论与数理统计.html" class="nav-link">
+  概率论与数理统计
+</a></li><li class="dropdown-subitem"><a href="/physics/math/数学物理方法.html" class="nav-link">
+  数学物理方法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子信息" class="dropdown-title"><span class="title">电子信息</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子信息" class="mobile-dropdown-title"><span class="title">电子信息</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          电子
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electronics/电路分析.html" class="nav-link">
+  电路分析
+</a></li><li class="dropdown-subitem"><a href="/electronics/模拟电子技术.html" class="nav-link">
+  模拟电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字电子技术.html" class="nav-link">
+  数字电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字信号处理.html" class="nav-link">
+  数字信号处理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通信
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/communication/通信原理.html" class="nav-link">
+  通信原理
+</a></li><li class="dropdown-subitem"><a href="/communication/信号与系统.html" class="nav-link">
+  信号与系统
+</a></li><li class="dropdown-subitem"><a href="/communication/信息论与编码.html" class="nav-link">
+  信息论与编码
+</a></li><li class="dropdown-subitem"><a href="/communication/电磁波与电磁场.html" class="nav-link">
+  电磁波与电磁场
+</a></li><li class="dropdown-subitem"><a href="/communication/微波技术与天线.html" class="nav-link">
+  微波技术与天线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          嵌入式
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/嵌入式/8051.html" class="nav-link">
+  8051单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/STM32.html" class="nav-link">
+  STM32单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/esp32.html" class="nav-link">
+  ESP32单片机
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li></ul></li><li class="dropdown-item"><h4>
+          链接
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/Warehouse/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文件仓库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/docs/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的项目
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/me/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/javascript/JavaScript.html#介绍" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/web/javascript/JavaScript.html#导入页面" class="sidebar-link">导入页面</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#使用-script-标签" class="sidebar-link">使用 &lt;script&gt; 标签</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#使用外部js文件" class="sidebar-link">使用外部js文件</a></li></ul></li><li><a href="/web/javascript/JavaScript.html#变量" class="sidebar-link">变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#数据类型" class="sidebar-link">数据类型</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#回收机制" class="sidebar-link">回收机制</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#字符串的连接" class="sidebar-link">字符串的连接</a></li></ul></li><li><a href="/web/javascript/JavaScript.html#对象" class="sidebar-link">对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#创建对象" class="sidebar-link">创建对象</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#使用对象" class="sidebar-link">使用对象</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#嵌套对象" class="sidebar-link">嵌套对象</a></li><li class="sidebar-sub-header"><a href="/web/javascript/JavaScript.html#删除对象中的属性" class="sidebar-link">删除对象中的属性</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h1> <div class="custom-block tip"><p class="custom-block-title">链接</p> <ul><li><a href="/web/javascript/实例.html">实例</a></li> <li><a href="/web/javascript/参考.html">参考</a></li></ul></div> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <ul><li>JavaScript 是一种轻量级的脚本语言</li> <li>JavaScript 可以插入 HTML 页面（网页），浏览器会执行它</li> <li>JavaScript（简称“JS”）是一种具有函数优先的轻量级解释型语言，在程序的运行过程中逐行进行解释，主要用于Web开发，但也可以用在其他环境中</li> <li>JavaScript是弱类型语言，使用时，对数据类型没有严格的要求</li></ul> <h2 id="导入页面"><a href="#导入页面" class="header-anchor">#</a> 导入页面</h2> <p>要在 Web 页面中使用 JavaScript 时需要将 js 代码导入 HTML 中，以下是导入 js 的方法：</p> <h3 id="使用-script-标签"><a href="#使用-script-标签" class="header-anchor">#</a> 使用 <code>&lt;script&gt;</code> 标签</h3> <p>我们可以使用<code>&lt;script&gt;</code> 标签在html文件中插入JavaScript代码，在浏览器中执行</p> <p>你可以把<code>&lt;script&gt;</code>标签放在<code>&lt;body&gt;</code>标签或<code>&lt;head&gt;</code>标签中</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;hello,world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="使用外部js文件"><a href="#使用外部js文件" class="header-anchor">#</a> 使用外部js文件</h3> <p>你也可以通过这种方式把外部的js文件导入网页中</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myScript.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>这样在网页中就可以使用这个文件里的代码，相对于把代码直接嵌入网页，引入外部js文件的方式更安全</p> <h2 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h2> <p>在 JavaScript 中变量是这样使用的</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 设置一个变量a</span>
+<span class="token keyword">var</span> a
+
+<span class="token comment">// 设置一个变量a并初始化为0</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token comment">// 设置一个变量a并赋值为0</span>
+<span class="token keyword">var</span> a
+a <span class="token operator">=</span> <span class="token number">0</span>
+</code></pre></div><p><code>a</code> 是变量名 <code>var</code> 是变量声明，除了 <code>var</code> 还有 <code>let</code>和<code>const</code></p> <table><thead><tr><th>声明</th> <th>作用域</th> <th>是否可重新赋值</th> <th>示例说明</th></tr></thead> <tbody><tr><td><code>var</code></td> <td>函数作用域</td> <td>✅</td> <td>在函数内声明，整个函数可用；无块级作用域</td></tr> <tr><td><code>let</code></td> <td>块级作用域</td> <td>✅</td> <td>仅在 <code>{}</code> 代码块内有效（如 <code>if</code>、<code>for</code>）</td></tr> <tr><td><code>const</code></td> <td>块级作用域</td> <td>❌</td> <td>同 <code>let</code>，但需初始化且不能重新赋值</td></tr></tbody></table> <p>在使用 <code>const</code> 声明时，变量一定要初始化</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> myName<span class="token punctuation">;</span> <span class="token comment">// 正确，不需要初始化</span>
+<span class="token keyword">const</span> myName<span class="token punctuation">;</span> <span class="token comment">//错误，必须初始化</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">命名规则</p> <ul><li>变量名区分大小写 (myVar ≠ myvar)</li> <li>避免使用保留字 如 <code>class</code>, <code>function</code> 等</li> <li>变量名开头不能用数字，只能是字母或 <code>_</code> 和 <code>$</code></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> name <span class="token comment">//正确</span>
+<span class="token keyword">var</span> _name <span class="token comment">//正确</span>
+<span class="token keyword">var</span> $name <span class="token comment">//正确</span>
+<span class="token keyword">var</span> 1name <span class="token comment">//错误</span>
+</code></pre></div></div> <h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <p>一般常见的数据类型有 <code>number</code>、<code>string</code> 、<code>boolean</code> 、<code>undefined</code></p> <p><code>number</code> 是数字类型，包括整数和浮点数 例如</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">25</span>
+</code></pre></div><p><code>string</code> 是字符串类型，当值为字符串类型时需要加上 <code>&quot;&quot;</code> （双引号）或者 <code>''</code>（单引号），不论用哪个引号作用都是一样的</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;yoseya&quot;</span>
+</code></pre></div><p>如果字符串中包含单引号或双引号时我们就可以换另一个引号括住值，保证不出错</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">'&quot;yoseya&quot;'</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment">// 输出结果：&quot;yoseya&quot;</span>
+</code></pre></div><p><code>boolean</code> 类型只有两个值 <code>true</code>（真） 或 <code>false</code>（假）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> isActive <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>undefined</code> 类型是一个特殊的类型，当变量的值不确定时该值为 <code>undefined</code>，当访问的值不存在是就会出现 <code>undefined</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// 输出结果为 undefined</span>
+</code></pre></div><p><code>null</code> 表示空值，当需要变量为空时就可以赋值为 <code>null</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="回收机制"><a href="#回收机制" class="header-anchor">#</a> 回收机制</h3> <p>JavaScript 中有一套叫做 Garbage Collection 的垃圾回收机制，用于释放那些不再使用的内存空间</p> <p>例如以下这段代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">16</span>
+a <span class="token operator">=</span> <span class="token number">100</span>
+</code></pre></div><p>我们设置了一个变量 <code>a</code> 并赋值为 <code>16</code>，这时内存空间存放了变量 <code>a</code> 和值 <code>16</code>，并将 <code>a</code> 指向值 <code>16</code> 的地址，然后我们又将变量 <code>a</code> 赋值为<code>100</code>，这时内存中又保存了一个值 <code>100</code>，并将变量 <code>a</code> 指向的地址改为值 <code>100</code> 的地址，但之前的值 16 现在已经多余了，这时 js 中的回收机制就会将存放这个值的内存空间标记为没有被指向的内存空间，在之后一并清理</p> <h3 id="字符串的连接"><a href="#字符串的连接" class="header-anchor">#</a> 字符串的连接</h3> <p>字符串连接是将多个字符串合并为一个字符</p> <p>使用运算符 <code>+</code> 将两段字符串类型的变量进行连接</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> str2 <span class="token operator">=</span> <span class="token string">&quot;World&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> result <span class="token operator">=</span> str1 <span class="token operator">+</span> <span class="token string">&quot; &quot;</span> <span class="token operator">+</span> str2<span class="token punctuation">;</span> <span class="token comment">// &quot;Hello World&quot;</span>
+</code></pre></div><p>使用运算符 <code>+</code> 将两段字符串进行连接</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span> <span class="token operator">+</span> <span class="token string">&quot;World&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//输出结果：HelloWorld</span>
+</code></pre></div><p>使用运算符 <code>+</code> 将变量与字符串进行连接</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str1 <span class="token operator">+</span> <span class="token string">&quot;World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//输出结果：HelloWorld</span>
+</code></pre></div><p>使用模板字符串的方式连接字符串</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> str2 <span class="token operator">=</span> <span class="token string">&quot;World&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>str1<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>str2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span> <span class="token comment">// 使用反引号进行字符串插值</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 输出结果: Hello World</span>
+</code></pre></div><p>将数组中的字符串进行拼接</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;I&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;love&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;JavaScript&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> sentence <span class="token operator">=</span> words<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;I love JavaScript&quot;</span>
+</code></pre></div><p>使用 String.concat() 进行字符串连接</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token string">&quot; Wor&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;ld&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &quot;Hello World&quot;</span>
+</code></pre></div><h2 id="对象"><a href="#对象" class="header-anchor">#</a> 对象</h2> <p>对象是一种复合数据类型，用于存储键值对的集合。</p> <ul><li>将现实生活中的实体时抽象成对象，在计算机中进行研究</li> <li>使用对象进行结构化数据存储</li></ul> <h3 id="创建对象"><a href="#创建对象" class="header-anchor">#</a> 创建对象</h3> <p>这就是一个对象，里面的值就是对象所具有的属性，他们以键值对的形式展示</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;小明&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">&quot;180cm&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hobby</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;足球&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;篮球&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>也可以先创建对象然后再插入值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+obj<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;小明&quot;</span>
+obj<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">18</span>
+obj<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">&quot;180cm&quot;</span>
+obj<span class="token punctuation">.</span>hobby <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;足球&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;篮球&quot;</span><span class="token punctuation">]</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><details class="custom-block details"><summary>输出结果</summary> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;name&quot;: &quot;小明&quot;,
+    &quot;age&quot;: 18,
+    &quot;height&quot;: &quot;180cm&quot;,
+    &quot;hobby&quot;: [
+        &quot;足球&quot;,
+        &quot;篮球&quot;
+    ]
+}
+</code></pre></div></details> <h3 id="使用对象"><a href="#使用对象" class="header-anchor">#</a> 使用对象</h3> <p>以该对象为例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;小明&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">&quot;180m&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hobby</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;足球&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;篮球&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以通过这样的方式读取对象中的值，使用对象时可以用 <code>x.y</code> 的形式也可以使用 <code>x[y]</code> 的形式</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> obj<span class="token punctuation">.</span>name <span class="token comment">// 方法1</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> obj<span class="token punctuation">[</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">]</span> <span class="token comment">// 方法2</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span> <span class="token comment">// 输出结果：小明 18</span>
+</code></pre></div><p>添加新的属性和修改原有属性的值</p> <div class="language-js extra-class"><pre class="language-js"><code>obj<span class="token punctuation">.</span>sex <span class="token operator">=</span> <span class="token string">&quot;男&quot;</span> <span class="token comment">// 添加新的属性</span>
+obj<span class="token punctuation">[</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">19</span> <span class="token comment">// 修改原有属性的值</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+</code></pre></div><details class="custom-block details"><summary>输出结果</summary> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;name&quot;: &quot;小明&quot;,
+    &quot;age&quot;: 19,
+    &quot;height&quot;: &quot;180m&quot;,
+    &quot;hobby&quot;: [
+        &quot;足球&quot;,
+        &quot;篮球&quot;
+    ],
+    &quot;sex&quot;: &quot;男&quot;
+}
+</code></pre></div></details> <h3 id="嵌套对象"><a href="#嵌套对象" class="header-anchor">#</a> 嵌套对象</h3> <p>在一个对象中，它的属性也是对象，就可以称作嵌套对象</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;小明&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">&quot;180cm&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hobby</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;足球&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;篮球&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">province</span><span class="token operator">:</span> <span class="token string">&quot;浙江&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">city</span><span class="token operator">:</span> <span class="token string">&quot;杭州&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">district</span><span class="token operator">:</span> <span class="token string">&quot;西湖区&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>高亮部分就是嵌套的对象，当我们要读取对象里嵌套的对象时可以使用 <code>a.b.c</code> 的形式</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> obj<span class="token punctuation">.</span>address<span class="token punctuation">.</span>city <span class="token comment">// 读取嵌套属性</span>
+obj<span class="token punctuation">.</span>address<span class="token punctuation">.</span>district <span class="token operator">=</span> <span class="token string">&quot;拱墅区&quot;</span> <span class="token comment">// 修改嵌套属性</span>
+obj<span class="token punctuation">.</span>address<span class="token punctuation">.</span>street <span class="token operator">=</span> <span class="token string">&quot;文三路&quot;</span> <span class="token comment">// 添加新的嵌套属性</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>obj<span class="token punctuation">)</span>
+</code></pre></div><p>也可以这样使用，但一般建议使用  <code>a.b.c</code>  这样链式访问的方式，方便表示层级结构</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> obj<span class="token punctuation">.</span>address<span class="token punctuation">[</span><span class="token string">&quot;city&quot;</span><span class="token punctuation">]</span>
+obj<span class="token punctuation">.</span>address<span class="token punctuation">[</span><span class="token string">&quot;district&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;拱墅区&quot;</span>
+obj<span class="token punctuation">.</span>address<span class="token punctuation">[</span><span class="token string">&quot;street&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;文三路&quot;</span>
+</code></pre></div><details class="custom-block details"><summary>输出结果</summary> <div class="language- extra-class"><pre class="language-text"><code>杭州
+{
+    &quot;name&quot;: &quot;小明&quot;,
+    &quot;age&quot;: 18,
+    &quot;height&quot;: &quot;180cm&quot;,
+    &quot;hobby&quot;: [
+        &quot;足球&quot;,
+        &quot;篮球&quot;
+    ],
+    &quot;address&quot;: {
+        &quot;province&quot;: &quot;浙江&quot;,
+        &quot;city&quot;: &quot;杭州&quot;,
+        &quot;district&quot;: &quot;拱墅区&quot;,
+        &quot;street&quot;: &quot;文三路&quot;
+    }
+}
+</code></pre></div></details> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>对象中的同级属性不能重名，如果对象中还有嵌套的对象，父对象的属性与子对象中的属性可以出现重名</p></div> <h3 id="删除对象中的属性"><a href="#删除对象中的属性" class="header-anchor">#</a> 删除对象中的属性</h3> <p>删除对象中的属性可以用关键字 <code>delete</code></p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;小明&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token string">&quot;180m&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hobby</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;足球&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;篮球&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">delete</span> obj<span class="token punctuation">.</span>name <span class="token comment">// 删除对象 obj 中的 name 属性</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+</code></pre></div><details class="custom-block details"><summary>输出结果</summary> <p>输出结果中没有了 <code>obj.name</code></p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;age&quot;: 18,
+    &quot;height&quot;: &quot;180m&quot;,
+    &quot;hobby&quot;: [
+        &quot;足球&quot;,
+        &quot;篮球&quot;
+    ]
+}
+</code></pre></div></details></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.36db608c.js" defer></script><script src="/assets/js/3.107e051b.js" defer></script><script src="/assets/js/64.834d1892.js" defer></script><script src="/assets/js/5.56dd59ee.js" defer></script>
+  </body>
+</html>
