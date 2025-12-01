@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESP32 | 釉色鸭的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./img/logo.png">
+    <script type="text/javascript" src="./js/MicrosoftClarity.js"></script>
+    <meta name="description" content="欢迎来到我的知识库，这里存放着我在自然科学，计算机科学，电子科学等领域所学习到的知识。">
+    <meta name="author" content="钢铁直男釉色鸭">
+    <meta name="baidu-site-verification" content="codeva-Tg016Vm0nu">
+    <meta name="msvalidate.01" content="B6576B71940A163919B4737E9A751485">
+    <meta name="google-site-verification" content="fV3hX5ZbIBy6PAxE0dubuOfSgI0nctKRpFwcbcsVB7w">
+    
+    <link rel="preload" href="/assets/css/0.styles.7324eb70.css" as="style"><link rel="preload" href="/assets/js/app.1cc258cf.js" as="script"><link rel="preload" href="/assets/js/3.107e051b.js" as="script"><link rel="preload" href="/assets/js/35.d6c54db9.js" as="script"><link rel="preload" href="/assets/js/5.56dd59ee.js" as="script"><link rel="prefetch" href="/assets/js/10.2b3e4369.js"><link rel="prefetch" href="/assets/js/11.c05c1ae2.js"><link rel="prefetch" href="/assets/js/12.40e6a7b8.js"><link rel="prefetch" href="/assets/js/13.f413abb3.js"><link rel="prefetch" href="/assets/js/14.c6111d4b.js"><link rel="prefetch" href="/assets/js/15.68d8aff1.js"><link rel="prefetch" href="/assets/js/16.ea59e35d.js"><link rel="prefetch" href="/assets/js/17.59b5a50d.js"><link rel="prefetch" href="/assets/js/18.3c65c578.js"><link rel="prefetch" href="/assets/js/19.2438d003.js"><link rel="prefetch" href="/assets/js/20.db4081be.js"><link rel="prefetch" href="/assets/js/21.4cafa004.js"><link rel="prefetch" href="/assets/js/22.b826a2dd.js"><link rel="prefetch" href="/assets/js/23.08d4b066.js"><link rel="prefetch" href="/assets/js/24.7f3357f8.js"><link rel="prefetch" href="/assets/js/25.ee322744.js"><link rel="prefetch" href="/assets/js/26.54b969b5.js"><link rel="prefetch" href="/assets/js/27.78cdf6ca.js"><link rel="prefetch" href="/assets/js/28.7d052513.js"><link rel="prefetch" href="/assets/js/29.882510d2.js"><link rel="prefetch" href="/assets/js/30.d200cedb.js"><link rel="prefetch" href="/assets/js/31.62023fc0.js"><link rel="prefetch" href="/assets/js/32.0b9d0b1c.js"><link rel="prefetch" href="/assets/js/33.dae75e2c.js"><link rel="prefetch" href="/assets/js/34.3cdc7c00.js"><link rel="prefetch" href="/assets/js/36.48bd47d8.js"><link rel="prefetch" href="/assets/js/37.1472c02c.js"><link rel="prefetch" href="/assets/js/38.598f12a9.js"><link rel="prefetch" href="/assets/js/39.7f3be8cb.js"><link rel="prefetch" href="/assets/js/4.3175c058.js"><link rel="prefetch" href="/assets/js/40.a6457d7c.js"><link rel="prefetch" href="/assets/js/41.e03182fe.js"><link rel="prefetch" href="/assets/js/42.edc35f60.js"><link rel="prefetch" href="/assets/js/43.3f48f145.js"><link rel="prefetch" href="/assets/js/44.c1a70845.js"><link rel="prefetch" href="/assets/js/45.fa4e9752.js"><link rel="prefetch" href="/assets/js/46.2491f52c.js"><link rel="prefetch" href="/assets/js/47.2e791849.js"><link rel="prefetch" href="/assets/js/48.a8cc8b70.js"><link rel="prefetch" href="/assets/js/49.cee5861e.js"><link rel="prefetch" href="/assets/js/50.3a1acf08.js"><link rel="prefetch" href="/assets/js/51.bd11c7aa.js"><link rel="prefetch" href="/assets/js/52.5f3bb057.js"><link rel="prefetch" href="/assets/js/53.7a029e2f.js"><link rel="prefetch" href="/assets/js/54.956659f9.js"><link rel="prefetch" href="/assets/js/55.692f41d6.js"><link rel="prefetch" href="/assets/js/56.cd825588.js"><link rel="prefetch" href="/assets/js/57.e68fb7c4.js"><link rel="prefetch" href="/assets/js/58.29f69425.js"><link rel="prefetch" href="/assets/js/59.09773648.js"><link rel="prefetch" href="/assets/js/6.3712678b.js"><link rel="prefetch" href="/assets/js/60.d4652a84.js"><link rel="prefetch" href="/assets/js/61.13b665f3.js"><link rel="prefetch" href="/assets/js/62.1ab83596.js"><link rel="prefetch" href="/assets/js/63.4a176233.js"><link rel="prefetch" href="/assets/js/64.3a323ed0.js"><link rel="prefetch" href="/assets/js/65.d1fee93f.js"><link rel="prefetch" href="/assets/js/66.857aab11.js"><link rel="prefetch" href="/assets/js/67.6170935d.js"><link rel="prefetch" href="/assets/js/68.8ba99be3.js"><link rel="prefetch" href="/assets/js/69.0c970f84.js"><link rel="prefetch" href="/assets/js/7.72cd435d.js"><link rel="prefetch" href="/assets/js/70.2a69396d.js"><link rel="prefetch" href="/assets/js/71.635e1c6e.js"><link rel="prefetch" href="/assets/js/72.f372e85d.js"><link rel="prefetch" href="/assets/js/73.cccd04e1.js"><link rel="prefetch" href="/assets/js/8.398eb1ea.js"><link rel="prefetch" href="/assets/js/9.c13a85dc.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.b132aabe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7324eb70.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">釉色鸭的笔记</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="万维网" class="dropdown-title"><span class="title">万维网</span> <span class="arrow down"></span></button> <button type="button" aria-label="万维网" class="mobile-dropdown-title"><span class="title">万维网</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/web/html/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/nodejs.html" class="nav-link">
+  Node.js
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/WebAssembly.html" class="nav-link">
+  WebAssembly
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/addition/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/c/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/computer/cpp/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/computer/python/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/computer/Java/java.html" class="nav-link">
+  Java
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/离散数学.html" class="nav-link">
+  离散数学
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机组成原理.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/computer/数据结构与算法.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/操作系统.html" class="nav-link">
+  操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/操作系统/Linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/HarmonyOS.html" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/AI/机器学习.html" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-subitem"><a href="/computer/数据库/数据库应用.html" class="nav-link">
+  数据库应用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="物理学" class="dropdown-title"><span class="title">物理学</span> <span class="arrow down"></span></button> <button type="button" aria-label="物理学" class="mobile-dropdown-title"><span class="title">物理学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/力学.html" class="nav-link">
+  力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热学.html" class="nav-link">
+  热学
+</a></li><li class="dropdown-subitem"><a href="/physics/电磁学.html" class="nav-link">
+  电磁学
+</a></li><li class="dropdown-subitem"><a href="/physics/光学.html" class="nav-link">
+  光学
+</a></li><li class="dropdown-subitem"><a href="/physics/原子物理.html" class="nav-link">
+  原子物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/分析力学.html" class="nav-link">
+  经典力学
+</a></li><li class="dropdown-subitem"><a href="/physics/量子力学/量子力学1.html" class="nav-link">
+  量子力学
+</a></li><li class="dropdown-subitem"><a href="/physics/电动力学.html" class="nav-link">
+  电动力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热力学与统计物理/热力学与统计物理1.html" class="nav-link">
+  热力学与统计物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/math/数学分析.html" class="nav-link">
+  数学分析
+</a></li><li class="dropdown-subitem"><a href="/physics/math/线性代数.html" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/physics/math/概率论与数理统计.html" class="nav-link">
+  概率论与数理统计
+</a></li><li class="dropdown-subitem"><a href="/physics/math/数学物理方法.html" class="nav-link">
+  数学物理方法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子信息" class="dropdown-title"><span class="title">电子信息</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子信息" class="mobile-dropdown-title"><span class="title">电子信息</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          电子
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electronics/电路分析.html" class="nav-link">
+  电路分析
+</a></li><li class="dropdown-subitem"><a href="/electronics/模拟电子技术.html" class="nav-link">
+  模拟电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字电子技术.html" class="nav-link">
+  数字电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字信号处理.html" class="nav-link">
+  数字信号处理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通信
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/communication/通信原理.html" class="nav-link">
+  通信原理
+</a></li><li class="dropdown-subitem"><a href="/communication/信号与系统.html" class="nav-link">
+  信号与系统
+</a></li><li class="dropdown-subitem"><a href="/communication/信息论与编码.html" class="nav-link">
+  信息论与编码
+</a></li><li class="dropdown-subitem"><a href="/communication/电磁波与电磁场.html" class="nav-link">
+  电磁波与电磁场
+</a></li><li class="dropdown-subitem"><a href="/communication/微波技术与天线.html" class="nav-link">
+  微波技术与天线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          嵌入式
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/嵌入式/8051.html" class="nav-link">
+  8051单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/STM32.html" class="nav-link">
+  STM32单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/esp32.html" class="nav-link">
+  ESP32单片机
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/git.html" class="nav-link">
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>
+          链接
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/Warehouse/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文件仓库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/docs/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的项目
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.cnblogs.com/yoseya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/me/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="万维网" class="dropdown-title"><span class="title">万维网</span> <span class="arrow down"></span></button> <button type="button" aria-label="万维网" class="mobile-dropdown-title"><span class="title">万维网</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/web/html/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/nodejs.html" class="nav-link">
+  Node.js
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/javascript/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/web/javascript/WebAssembly.html" class="nav-link">
+  WebAssembly
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-subitem"><a href="/addition/vuepress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/addition/浏览器扩展开发.html" class="nav-link">
+  浏览器扩展开发
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/c/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-subitem"><a href="/computer/cpp/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/computer/python/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/computer/Java/java.html" class="nav-link">
+  Java
+</a></li></ul></li><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/离散数学.html" class="nav-link">
+  离散数学
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机组成原理.html" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-subitem"><a href="/computer/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/computer/数据结构与算法.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/操作系统.html" class="nav-link">
+  操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/操作系统/Linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-subitem"><a href="/computer/操作系统/HarmonyOS.html" class="nav-link">
+  HarmonyOS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/AI/机器学习.html" class="nav-link">
+  机器学习
+</a></li><li class="dropdown-subitem"><a href="/computer/数据库/数据库应用.html" class="nav-link">
+  数据库应用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="物理学" class="dropdown-title"><span class="title">物理学</span> <span class="arrow down"></span></button> <button type="button" aria-label="物理学" class="mobile-dropdown-title"><span class="title">物理学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/力学.html" class="nav-link">
+  力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热学.html" class="nav-link">
+  热学
+</a></li><li class="dropdown-subitem"><a href="/physics/电磁学.html" class="nav-link">
+  电磁学
+</a></li><li class="dropdown-subitem"><a href="/physics/光学.html" class="nav-link">
+  光学
+</a></li><li class="dropdown-subitem"><a href="/physics/原子物理.html" class="nav-link">
+  原子物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/分析力学.html" class="nav-link">
+  经典力学
+</a></li><li class="dropdown-subitem"><a href="/physics/量子力学/量子力学1.html" class="nav-link">
+  量子力学
+</a></li><li class="dropdown-subitem"><a href="/physics/电动力学.html" class="nav-link">
+  电动力学
+</a></li><li class="dropdown-subitem"><a href="/physics/热力学与统计物理/热力学与统计物理1.html" class="nav-link">
+  热力学与统计物理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/physics/math/数学分析.html" class="nav-link">
+  数学分析
+</a></li><li class="dropdown-subitem"><a href="/physics/math/线性代数.html" class="nav-link">
+  线性代数
+</a></li><li class="dropdown-subitem"><a href="/physics/math/概率论与数理统计.html" class="nav-link">
+  概率论与数理统计
+</a></li><li class="dropdown-subitem"><a href="/physics/math/数学物理方法.html" class="nav-link">
+  数学物理方法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="电子信息" class="dropdown-title"><span class="title">电子信息</span> <span class="arrow down"></span></button> <button type="button" aria-label="电子信息" class="mobile-dropdown-title"><span class="title">电子信息</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          电子
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electronics/电路分析.html" class="nav-link">
+  电路分析
+</a></li><li class="dropdown-subitem"><a href="/electronics/模拟电子技术.html" class="nav-link">
+  模拟电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字电子技术.html" class="nav-link">
+  数字电子技术
+</a></li><li class="dropdown-subitem"><a href="/electronics/数字信号处理.html" class="nav-link">
+  数字信号处理
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通信
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/communication/通信原理.html" class="nav-link">
+  通信原理
+</a></li><li class="dropdown-subitem"><a href="/communication/信号与系统.html" class="nav-link">
+  信号与系统
+</a></li><li class="dropdown-subitem"><a href="/communication/信息论与编码.html" class="nav-link">
+  信息论与编码
+</a></li><li class="dropdown-subitem"><a href="/communication/电磁波与电磁场.html" class="nav-link">
+  电磁波与电磁场
+</a></li><li class="dropdown-subitem"><a href="/communication/微波技术与天线.html" class="nav-link">
+  微波技术与天线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          嵌入式
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/嵌入式/8051.html" class="nav-link">
+  8051单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/STM32.html" class="nav-link">
+  STM32单片机
+</a></li><li class="dropdown-subitem"><a href="/computer/嵌入式/esp32.html" class="nav-link">
+  ESP32单片机
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/addition/xml.html" class="nav-link">
+  XML
+</a></li><li class="dropdown-subitem"><a href="/addition/latex.html" class="nav-link">
+  LaTeX
+</a></li><li class="dropdown-subitem"><a href="/addition/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/addition/git.html" class="nav-link">
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>
+          链接
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/Warehouse/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文件仓库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/docs/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的项目
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.cnblogs.com/yoseya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://yoseya2410.github.io/me/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/Yoseya2410" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>ESP32</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/computer/%E5%B5%8C%E5%85%A5%E5%BC%8F/esp32.html#开发环境" class="sidebar-link">开发环境</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computer/%E5%B5%8C%E5%85%A5%E5%BC%8F/esp32.html#使用-arduino-ide-开发" class="sidebar-link">使用 Arduino IDE 开发</a></li><li class="sidebar-sub-header"><a href="/computer/%E5%B5%8C%E5%85%A5%E5%BC%8F/esp32.html#使用-vscode-开发" class="sidebar-link">使用 VScode 开发</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="esp32"><a href="#esp32" class="header-anchor">#</a> ESP32</h1> <p>ESP32 是一款由乐鑫科技（Espressif Systems）开发的低成本、低功耗、高集成度的微控制器芯片，广泛应用于物联网（IoT）项目中，自带 Wi-Fi 和蓝牙模块，拥有丰富的外设接口。</p> <h2 id="开发环境"><a href="#开发环境" class="header-anchor">#</a> 开发环境</h2> <p>开发 ESP32 常用的 IDE 有 Arduino IDE 和 ESP-IDF，Arduino IDE 适合快速原型开发，ESP-IDF 适合对硬件深度控制的底层开发。</p> <h3 id="使用-arduino-ide-开发"><a href="#使用-arduino-ide-开发" class="header-anchor">#</a> 使用 Arduino IDE 开发</h3> <p>在 Arduino IDE 中打开<code>开发板管理器</code>搜索 <code>esp32</code> 并下载安装，之后就可以使用 Arduino IDE 开发 ESP32 系列的单片机了，如果要开发 ESP8266 单片机，在<code>开发板管理器</code>是搜索不到的，需要根据以下操作进行安装</p> <details class="custom-block details"><summary>在Arduino中开发ESP8266</summary> <p>在<code>文件 —&gt; 首选项 —&gt; 其他开发板管理器地址</code>中填写链接</p> <div class="language- extra-class"><pre class="language-text"><code>http://arduino.esp8266.com/stable/package_esp8266com_index.json
+</code></pre></div><p>然后搜索 <code>esp8266</code> 并安装</p></details> <h3 id="使用-vscode-开发"><a href="#使用-vscode-开发" class="header-anchor">#</a> 使用 VScode 开发</h3> <p>除了使用 Arduino IDE 还可以使用 VScode 开发 ESP32 单片机</p> <ol><li>安装插件 <code>ESP-IDF</code>（必装）<code>Cmake Tools</code>、<code>C/C++</code>、<code>Python</code>(建议安装)</li> <li>安装开发环境SDK，具体步骤可以参考文章：
+<a href="https://blog.csdn.net/m0_46426465/article/details/144375945?fromshare=blogdetail&amp;sharetype=blogdetail&amp;sharerId=144375945&amp;sharerefer=PC&amp;sharesource=Yoseya2410&amp;sharefrom=from_link" target="_blank" rel="noopener noreferrer">ESP32开发环境：VS Code配置ESP32开发环境<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>创建新的项目，选择烧录方式（一般用 UART），选择开发板所连接的端口，选择芯片型号</li> <li>配置完后就可以在直接进行开发了，项目代码在 <code>./main/blink_example_main.c</code> 中，<code>sdkconfig</code> 文件用于存储项目的所有配置选项，包含芯片特性、组件配置、编译选项，预处理器宏定义，控制代码的编译条件，决定启用或禁用哪些功能和组件</li> <li>代码编写完后，先点击🔧<code>构建项目</code>，编译完成后再点击⚡<code>烧录项目</code></li> <li>烧录结束，编写的代码就可以在单片机上运行了</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.1cc258cf.js" defer></script><script src="/assets/js/3.107e051b.js" defer></script><script src="/assets/js/35.d6c54db9.js" defer></script><script src="/assets/js/5.56dd59ee.js" defer></script>
+  </body>
+</html>

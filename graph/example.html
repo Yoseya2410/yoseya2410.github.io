@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>函数图像</title>
+  <script src="calculator.js"></script>
+</head>
+<!-- API参考：https://www.desmos.com/api/v1.7/docs/index.html -->
+
+<body>
+  <div id="calculator" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        z-index: 9999;
+      "></div>
+
+  <script>
+    // 关于画布的设置
+    const elt = document.getElementById("calculator");
+    if (!elt) {
+      console.error("未找到ID为 'calculator' 的元素");
+    }
+
+    if (typeof Desmos === 'undefined' || typeof Desmos.GraphingCalculator !== 'function') {
+      console.error("Desmos库未加载或加载失败");
+    } else {
+      const calculator = Desmos.GraphingCalculator(elt, {
+        autosize: false,
+        expressionsCollapsed: true,
+        settingsMenu: false,
+      });
+
+      // 设置图像边界
+      calculator.setMathBounds({
+        left: -5,
+        right: 5,
+        bottom: -3,
+        top: 3,
+      });
+      //参数示例：http://127.0.0.1:5500/docs/.vuepress/public/graph/example.html?f1={y=e^x}&f2={y=|sin3x}&f3={y=|cos(4x)}&f4={y=|sin(x)}&f5={y=|tan(2x)}
+      // 解析URL参数并处理
+      const urlParams = new URLSearchParams(window.location.search);
+      const latexParams = ['f1', 'f2', 'f3', 'f4', 'f5'].map(paramKey => {
+        let value = urlParams.get(paramKey) || "";
+        return value.replace(/\|/g, '\\').replace(/\{/g, '').replace(/\}/g, '');
+      });
+
+      // 动态设置LaTeX表达式
+      try {
+        calculator.setExpressions([
+          { id: "graph1", latex: latexParams[0], color: "#c74440", lineStyle: Desmos.Styles.SOLID },
+          { id: "graph2", latex: latexParams[1], color: "#2d70b3" },
+          { id: "graph3", latex: latexParams[2], color: "#388c46" },
+          { id: "graph4", latex: latexParams[3], color: "#6042a6" },
+          { id: "graph5", latex: latexParams[4], color: "#f8bc0c" },
+        ]);
+        console.log("图像设置完成");
+      } catch (error) {
+        console.error("设置表达式时出错:", error);
+      }
+    }
+  </script>
+</body>
+
+</html>
